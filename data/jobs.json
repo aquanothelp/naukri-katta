@@ -6,284 +6,1714 @@
       "id": "smc-clerk-2026",
       "type": "job",
       "category": "municipal",
-      "title": { "en": "Sahyadri Municipal Corporation Clerk Recruitment 2026", "mr": "सह्याद्री महानगरपालिका लिपिक भरती 2026" },
-      "org": { "en": "Sahyadri Municipal Corporation (sample)", "mr": "सह्याद्री महानगरपालिका (नमुना)" },
+      "title": {
+        "en": "Sahyadri Municipal Corporation Clerk Recruitment 2026",
+        "mr": "सह्याद्री महानगरपालिका लिपिक भरती 2026"
+      },
+      "org": {
+        "en": "Sahyadri Municipal Corporation (sample)",
+        "mr": "सह्याद्री महानगरपालिका (नमुना)"
+      },
       "district": "Pune",
-      "qualification": ["Graduate"],
+      "qualification": [
+        "Graduate"
+      ],
       "posts": 148,
       "published": "2026-10-26",
       "startDate": "2026-10-26",
       "lastDate": "2026-11-20",
       "examDate": "2026-12-14",
       "salary": "₹19,900 – ₹63,200",
-      "age": { "en": "18–38 years (relaxation as per rules)", "mr": "18–38 वर्षे (नियमानुसार सूट)" },
-      "fee": { "en": "Open ₹1000 · Reserved ₹900", "mr": "खुला ₹1000 · मागासवर्गीय ₹900" },
-      "summary": { "en": "Online applications are invited for Clerk-Typist posts. Marathi and English typing certificate required.", "mr": "लिपिक-टंकलेखक पदांसाठी ऑनलाईन अर्ज मागविण्यात येत आहेत. मराठी व इंग्रजी टंकलेखन प्रमाणपत्र आवश्यक." },
+      "age": {
+        "en": "18–38 years (relaxation as per rules)",
+        "mr": "18–38 वर्षे (नियमानुसार सूट)"
+      },
+      "fee": {
+        "en": "Open ₹1000 · Reserved ₹900",
+        "mr": "खुला ₹1000 · मागासवर्गीय ₹900"
+      },
+      "summary": {
+        "en": "Online applications are invited for Clerk-Typist posts. Marathi and English typing certificate required.",
+        "mr": "लिपिक-टंकलेखक पदांसाठी ऑनलाईन अर्ज मागविण्यात येत आहेत. मराठी व इंग्रजी टंकलेखन प्रमाणपत्र आवश्यक."
+      },
       "steps": [
-        { "en": "Read the full notification PDF.", "mr": "संपूर्ण जाहिरात PDF वाचा." },
-        { "en": "Register on the online portal with mobile and email.", "mr": "मोबाईल व ईमेलसह ऑनलाईन पोर्टलवर नोंदणी करा." },
-        { "en": "Fill the form, upload photo and signature.", "mr": "अर्ज भरा, फोटो व स्वाक्षरी अपलोड करा." },
-        { "en": "Pay the fee and print the application.", "mr": "शुल्क भरा व अर्जाची प्रिंट घ्या." }
+        {
+          "en": "Read the full notification PDF.",
+          "mr": "संपूर्ण जाहिरात PDF वाचा."
+        },
+        {
+          "en": "Register on the online portal with mobile and email.",
+          "mr": "मोबाईल व ईमेलसह ऑनलाईन पोर्टलवर नोंदणी करा."
+        },
+        {
+          "en": "Fill the form, upload photo and signature.",
+          "mr": "अर्ज भरा, फोटो व स्वाक्षरी अपलोड करा."
+        },
+        {
+          "en": "Pay the fee and print the application.",
+          "mr": "शुल्क भरा व अर्जाची प्रिंट घ्या."
+        }
       ]
     },
     {
       "id": "mh-police-constable-2026",
       "type": "job",
       "category": "police",
-      "title": { "en": "District Police Constable Bharti 2026", "mr": "जिल्हा पोलीस शिपाई भरती 2026" },
-      "org": { "en": "Godavari District Police (sample)", "mr": "गोदावरी जिल्हा पोलीस (नमुना)" },
+      "title": {
+        "en": "District Police Constable Bharti 2026",
+        "mr": "जिल्हा पोलीस शिपाई भरती 2026"
+      },
+      "org": {
+        "en": "Godavari District Police (sample)",
+        "mr": "गोदावरी जिल्हा पोलीस (नमुना)"
+      },
       "district": "Nashik",
-      "qualification": ["12th"],
+      "qualification": [
+        "12th"
+      ],
       "posts": 412,
       "published": "2026-10-24",
       "startDate": "2026-10-24",
       "lastDate": "2026-10-29",
       "examDate": "2026-12-01",
       "salary": "₹21,700 – ₹69,100",
-      "age": { "en": "18–28 years", "mr": "18–28 वर्षे" },
-      "fee": { "en": "Open ₹450 · Reserved ₹350", "mr": "खुला ₹450 · मागासवर्गीय ₹350" },
-      "summary": { "en": "Physical test followed by written exam. Height and chest criteria apply.", "mr": "शारीरिक चाचणी व त्यानंतर लेखी परीक्षा. उंची व छाती निकष लागू." },
+      "age": {
+        "en": "18–28 years",
+        "mr": "18–28 वर्षे"
+      },
+      "fee": {
+        "en": "Open ₹450 · Reserved ₹350",
+        "mr": "खुला ₹450 · मागासवर्गीय ₹350"
+      },
+      "summary": {
+        "en": "Physical test followed by written exam. Height and chest criteria apply.",
+        "mr": "शारीरिक चाचणी व त्यानंतर लेखी परीक्षा. उंची व छाती निकष लागू."
+      },
       "steps": [
-        { "en": "Check physical eligibility in the notification.", "mr": "जाहिरातीतील शारीरिक पात्रता तपासा." },
-        { "en": "Apply online and choose one district only.", "mr": "ऑनलाईन अर्ज करा, एकच जिल्हा निवडा." },
-        { "en": "Pay fee and download the acknowledgement.", "mr": "शुल्क भरा व पोचपावती डाउनलोड करा." }
+        {
+          "en": "Check physical eligibility in the notification.",
+          "mr": "जाहिरातीतील शारीरिक पात्रता तपासा."
+        },
+        {
+          "en": "Apply online and choose one district only.",
+          "mr": "ऑनलाईन अर्ज करा, एकच जिल्हा निवडा."
+        },
+        {
+          "en": "Pay fee and download the acknowledgement.",
+          "mr": "शुल्क भरा व पोचपावती डाउनलोड करा."
+        }
       ]
     },
     {
       "id": "krb-officer-2026",
       "type": "job",
       "category": "bank",
-      "title": { "en": "Krishna Rural Bank Officer Scale-I Recruitment", "mr": "कृष्णा ग्रामीण बँक अधिकारी स्केल-I भरती" },
-      "org": { "en": "Krishna Rural Bank (sample)", "mr": "कृष्णा ग्रामीण बँक (नमुना)" },
+      "title": {
+        "en": "Krishna Rural Bank Officer Scale-I Recruitment",
+        "mr": "कृष्णा ग्रामीण बँक अधिकारी स्केल-I भरती"
+      },
+      "org": {
+        "en": "Krishna Rural Bank (sample)",
+        "mr": "कृष्णा ग्रामीण बँक (नमुना)"
+      },
       "district": "Satara",
-      "qualification": ["Graduate"],
+      "qualification": [
+        "Graduate"
+      ],
       "posts": 60,
       "published": "2026-10-22",
       "startDate": "2026-10-22",
       "lastDate": "2026-11-12",
       "examDate": "2026-12-07",
       "salary": "₹48,480 – ₹85,920",
-      "age": { "en": "20–30 years", "mr": "20–30 वर्षे" },
-      "fee": { "en": "₹850 (SC/ST/PwD ₹175)", "mr": "₹850 (अजा/अज/दिव्यांग ₹175)" },
-      "summary": { "en": "Graduates in any discipline. Knowledge of Marathi is mandatory.", "mr": "कोणत्याही शाखेतील पदवीधर. मराठी भाषेचे ज्ञान अनिवार्य." },
+      "age": {
+        "en": "20–30 years",
+        "mr": "20–30 वर्षे"
+      },
+      "fee": {
+        "en": "₹850 (SC/ST/PwD ₹175)",
+        "mr": "₹850 (अजा/अज/दिव्यांग ₹175)"
+      },
+      "summary": {
+        "en": "Graduates in any discipline. Knowledge of Marathi is mandatory.",
+        "mr": "कोणत्याही शाखेतील पदवीधर. मराठी भाषेचे ज्ञान अनिवार्य."
+      },
       "steps": [
-        { "en": "Register on the bank's careers page.", "mr": "बँकेच्या करिअर पेजवर नोंदणी करा." },
-        { "en": "Fill details and upload documents.", "mr": "माहिती भरा व कागदपत्रे अपलोड करा." },
-        { "en": "Pay fee online.", "mr": "ऑनलाईन शुल्क भरा." }
+        {
+          "en": "Register on the bank's careers page.",
+          "mr": "बँकेच्या करिअर पेजवर नोंदणी करा."
+        },
+        {
+          "en": "Fill details and upload documents.",
+          "mr": "माहिती भरा व कागदपत्रे अपलोड करा."
+        },
+        {
+          "en": "Pay fee online.",
+          "mr": "ऑनलाईन शुल्क भरा."
+        }
       ]
     },
     {
       "id": "zp-health-worker-2026",
       "type": "job",
       "category": "health",
-      "title": { "en": "Zilla Parishad Health Worker & Nurse Posts", "mr": "जिल्हा परिषद आरोग्य सेवक व परिचारिका पदे" },
-      "org": { "en": "Vidarbha Zilla Parishad (sample)", "mr": "विदर्भ जिल्हा परिषद (नमुना)" },
+      "title": {
+        "en": "Zilla Parishad Health Worker & Nurse Posts",
+        "mr": "जिल्हा परिषद आरोग्य सेवक व परिचारिका पदे"
+      },
+      "org": {
+        "en": "Vidarbha Zilla Parishad (sample)",
+        "mr": "विदर्भ जिल्हा परिषद (नमुना)"
+      },
       "district": "Nagpur",
-      "qualification": ["12th", "Diploma"],
+      "qualification": [
+        "12th",
+        "Diploma"
+      ],
       "posts": 95,
       "published": "2026-10-27",
       "startDate": "2026-10-27",
       "lastDate": "2026-11-27",
       "examDate": null,
       "salary": "₹25,500 – ₹81,100",
-      "age": { "en": "18–38 years", "mr": "18–38 वर्षे" },
-      "fee": { "en": "₹500", "mr": "₹500" },
-      "summary": { "en": "ANM/GNM diploma holders may apply. Selection by merit list and interview.", "mr": "ANM/GNM पदविकाधारक अर्ज करू शकतात. गुणवत्ता यादी व मुलाखतीद्वारे निवड." },
+      "age": {
+        "en": "18–38 years",
+        "mr": "18–38 वर्षे"
+      },
+      "fee": {
+        "en": "₹500",
+        "mr": "₹500"
+      },
+      "summary": {
+        "en": "ANM/GNM diploma holders may apply. Selection by merit list and interview.",
+        "mr": "ANM/GNM पदविकाधारक अर्ज करू शकतात. गुणवत्ता यादी व मुलाखतीद्वारे निवड."
+      },
       "steps": [
-        { "en": "Download the offline form from the notice.", "mr": "जाहिरातीतून ऑफलाईन अर्ज डाउनलोड करा." },
-        { "en": "Attach attested copies of certificates.", "mr": "प्रमाणपत्रांच्या साक्षांकित प्रती जोडा." },
-        { "en": "Send by post before the last date.", "mr": "अंतिम तारखेपूर्वी पोस्टाने पाठवा." }
+        {
+          "en": "Download the offline form from the notice.",
+          "mr": "जाहिरातीतून ऑफलाईन अर्ज डाउनलोड करा."
+        },
+        {
+          "en": "Attach attested copies of certificates.",
+          "mr": "प्रमाणपत्रांच्या साक्षांकित प्रती जोडा."
+        },
+        {
+          "en": "Send by post before the last date.",
+          "mr": "अंतिम तारखेपूर्वी पोस्टाने पाठवा."
+        }
       ]
     },
     {
       "id": "msrtc-apprentice-2026",
       "type": "job",
       "category": "transport",
-      "title": { "en": "State Transport Apprentice Recruitment (ITI)", "mr": "राज्य परिवहन शिकाऊ उमेदवार भरती (ITI)" },
-      "org": { "en": "Konkan Transport Division (sample)", "mr": "कोकण परिवहन विभाग (नमुना)" },
+      "title": {
+        "en": "State Transport Apprentice Recruitment (ITI)",
+        "mr": "राज्य परिवहन शिकाऊ उमेदवार भरती (ITI)"
+      },
+      "org": {
+        "en": "Konkan Transport Division (sample)",
+        "mr": "कोकण परिवहन विभाग (नमुना)"
+      },
       "district": "Ratnagiri",
-      "qualification": ["10th", "ITI"],
+      "qualification": [
+        "10th",
+        "ITI"
+      ],
       "posts": 230,
       "published": "2026-10-20",
       "startDate": "2026-10-20",
       "lastDate": "2026-11-05",
       "examDate": null,
       "salary": "Stipend as per Apprentice Act",
-      "age": { "en": "16–33 years", "mr": "16–33 वर्षे" },
-      "fee": { "en": "₹590", "mr": "₹590" },
-      "summary": { "en": "Trades: Mechanic Diesel, Electrician, Welder, Sheet Metal.", "mr": "ट्रेड: मेकॅनिक डिझेल, इलेक्ट्रिशियन, वेल्डर, शीट मेटल." },
+      "age": {
+        "en": "16–33 years",
+        "mr": "16–33 वर्षे"
+      },
+      "fee": {
+        "en": "₹590",
+        "mr": "₹590"
+      },
+      "summary": {
+        "en": "Trades: Mechanic Diesel, Electrician, Welder, Sheet Metal.",
+        "mr": "ट्रेड: मेकॅनिक डिझेल, इलेक्ट्रिशियन, वेल्डर, शीट मेटल."
+      },
       "steps": [
-        { "en": "Register on the apprenticeship portal.", "mr": "अप्रेंटिसशिप पोर्टलवर नोंदणी करा." },
-        { "en": "Apply to the division and submit documents at the depot.", "mr": "विभागाकडे अर्ज करा व आगारात कागदपत्रे जमा करा." }
+        {
+          "en": "Register on the apprenticeship portal.",
+          "mr": "अप्रेंटिसशिप पोर्टलवर नोंदणी करा."
+        },
+        {
+          "en": "Apply to the division and submit documents at the depot.",
+          "mr": "विभागाकडे अर्ज करा व आगारात कागदपत्रे जमा करा."
+        }
       ]
     },
     {
       "id": "school-teacher-2026",
       "type": "job",
       "category": "teaching",
-      "title": { "en": "Aided Schools Teacher Recruitment (Shikshak Bharti)", "mr": "अनुदानित शाळा शिक्षक भरती" },
-      "org": { "en": "Marathwada Education Board (sample)", "mr": "मराठवाडा शिक्षण मंडळ (नमुना)" },
+      "title": {
+        "en": "Aided Schools Teacher Recruitment (Shikshak Bharti)",
+        "mr": "अनुदानित शाळा शिक्षक भरती"
+      },
+      "org": {
+        "en": "Marathwada Education Board (sample)",
+        "mr": "मराठवाडा शिक्षण मंडळ (नमुना)"
+      },
       "district": "Aurangabad",
-      "qualification": ["Graduate", "B.Ed"],
+      "qualification": [
+        "Graduate",
+        "B.Ed"
+      ],
       "posts": 520,
       "published": "2026-10-18",
       "startDate": "2026-10-18",
       "lastDate": "2026-11-30",
       "examDate": null,
       "salary": "₹29,200 – ₹92,300",
-      "age": { "en": "21–43 years", "mr": "21–43 वर्षे" },
-      "fee": { "en": "No fee", "mr": "शुल्क नाही" },
-      "summary": { "en": "Selection through aptitude test score. D.Ed/B.Ed with TET required.", "mr": "अभियोग्यता चाचणी गुणांद्वारे निवड. D.Ed/B.Ed व TET आवश्यक." },
+      "age": {
+        "en": "21–43 years",
+        "mr": "21–43 वर्षे"
+      },
+      "fee": {
+        "en": "No fee",
+        "mr": "शुल्क नाही"
+      },
+      "summary": {
+        "en": "Selection through aptitude test score. D.Ed/B.Ed with TET required.",
+        "mr": "अभियोग्यता चाचणी गुणांद्वारे निवड. D.Ed/B.Ed व TET आवश्यक."
+      },
       "steps": [
-        { "en": "Log in with your aptitude test ID.", "mr": "अभियोग्यता चाचणी ID ने लॉगिन करा." },
-        { "en": "Choose school preferences.", "mr": "शाळांचे पसंतीक्रम निवडा." },
-        { "en": "Lock and submit.", "mr": "लॉक करून सबमिट करा." }
+        {
+          "en": "Log in with your aptitude test ID.",
+          "mr": "अभियोग्यता चाचणी ID ने लॉगिन करा."
+        },
+        {
+          "en": "Choose school preferences.",
+          "mr": "शाळांचे पसंतीक्रम निवडा."
+        },
+        {
+          "en": "Lock and submit.",
+          "mr": "लॉक करून सबमिट करा."
+        }
       ]
     },
     {
       "id": "army-agniveer-rally-2026",
       "type": "job",
       "category": "defence",
-      "title": { "en": "Recruitment Rally — Soldier General Duty", "mr": "भरती मेळावा — सैनिक जनरल ड्युटी" },
-      "org": { "en": "Western Recruiting Office (sample)", "mr": "पश्चिम भरती कार्यालय (नमुना)" },
+      "title": {
+        "en": "Recruitment Rally — Soldier General Duty",
+        "mr": "भरती मेळावा — सैनिक जनरल ड्युटी"
+      },
+      "org": {
+        "en": "Western Recruiting Office (sample)",
+        "mr": "पश्चिम भरती कार्यालय (नमुना)"
+      },
       "district": "All Maharashtra",
-      "qualification": ["10th"],
+      "qualification": [
+        "10th"
+      ],
       "posts": 0,
       "published": "2026-10-15",
       "startDate": "2026-10-15",
       "lastDate": "2026-11-08",
       "examDate": "2026-12-20",
       "salary": "As per scheme",
-      "age": { "en": "17.5–21 years", "mr": "17.5–21 वर्षे" },
-      "fee": { "en": "₹250", "mr": "₹250" },
-      "summary": { "en": "Online common entrance exam followed by rally. Posts not specified.", "mr": "ऑनलाईन सामायिक प्रवेश परीक्षा व त्यानंतर मेळावा. पदसंख्या नमूद नाही." },
+      "age": {
+        "en": "17.5–21 years",
+        "mr": "17.5–21 वर्षे"
+      },
+      "fee": {
+        "en": "₹250",
+        "mr": "₹250"
+      },
+      "summary": {
+        "en": "Online common entrance exam followed by rally. Posts not specified.",
+        "mr": "ऑनलाईन सामायिक प्रवेश परीक्षा व त्यानंतर मेळावा. पदसंख्या नमूद नाही."
+      },
       "steps": [
-        { "en": "Register on the recruitment website.", "mr": "भरती संकेतस्थळावर नोंदणी करा." },
-        { "en": "Select exam centre and pay fee.", "mr": "परीक्षा केंद्र निवडा व शुल्क भरा." }
+        {
+          "en": "Register on the recruitment website.",
+          "mr": "भरती संकेतस्थळावर नोंदणी करा."
+        },
+        {
+          "en": "Select exam centre and pay fee.",
+          "mr": "परीक्षा केंद्र निवडा व शुल्क भरा."
+        }
       ]
     },
     {
       "id": "railway-group-d-2026",
       "type": "job",
       "category": "railway",
-      "title": { "en": "Railway Level-1 (Group D) Posts", "mr": "रेल्वे लेव्हल-1 (गट ड) पदे" },
-      "org": { "en": "Deccan Railway Zone (sample)", "mr": "दख्खन रेल्वे विभाग (नमुना)" },
+      "title": {
+        "en": "Railway Level-1 (Group D) Posts",
+        "mr": "रेल्वे लेव्हल-1 (गट ड) पदे"
+      },
+      "org": {
+        "en": "Deccan Railway Zone (sample)",
+        "mr": "दख्खन रेल्वे विभाग (नमुना)"
+      },
       "district": "Mumbai",
-      "qualification": ["10th", "ITI"],
+      "qualification": [
+        "10th",
+        "ITI"
+      ],
       "posts": 1820,
       "published": "2026-10-12",
       "startDate": "2026-10-12",
       "lastDate": "2026-10-27",
       "examDate": "2027-01-15",
       "salary": "₹18,000 + allowances",
-      "age": { "en": "18–33 years", "mr": "18–33 वर्षे" },
-      "fee": { "en": "₹500 (₹400 refunded after CBT)", "mr": "₹500 (CBT नंतर ₹400 परत)" },
-      "summary": { "en": "Track maintainer, helper and porter posts across the zone.", "mr": "ट्रॅक मेंटेनर, हेल्पर व पोर्टर पदे." },
+      "age": {
+        "en": "18–33 years",
+        "mr": "18–33 वर्षे"
+      },
+      "fee": {
+        "en": "₹500 (₹400 refunded after CBT)",
+        "mr": "₹500 (CBT नंतर ₹400 परत)"
+      },
+      "summary": {
+        "en": "Track maintainer, helper and porter posts across the zone.",
+        "mr": "ट्रॅक मेंटेनर, हेल्पर व पोर्टर पदे."
+      },
       "steps": [
-        { "en": "Create an account on the board website.", "mr": "बोर्डाच्या संकेतस्थळावर खाते तयार करा." },
-        { "en": "Fill application, choose zone, pay fee.", "mr": "अर्ज भरा, विभाग निवडा, शुल्क भरा." }
+        {
+          "en": "Create an account on the board website.",
+          "mr": "बोर्डाच्या संकेतस्थळावर खाते तयार करा."
+        },
+        {
+          "en": "Fill application, choose zone, pay fee.",
+          "mr": "अर्ज भरा, विभाग निवडा, शुल्क भरा."
+        }
       ]
     },
     {
       "id": "pwd-junior-engineer-2026",
       "type": "job",
       "category": "engineering",
-      "title": { "en": "Public Works Junior Engineer (Civil) Recruitment", "mr": "सार्वजनिक बांधकाम कनिष्ठ अभियंता (स्थापत्य) भरती" },
-      "org": { "en": "Public Works Circle (sample)", "mr": "सार्वजनिक बांधकाम मंडळ (नमुना)" },
+      "title": {
+        "en": "Public Works Junior Engineer (Civil) Recruitment",
+        "mr": "सार्वजनिक बांधकाम कनिष्ठ अभियंता (स्थापत्य) भरती"
+      },
+      "org": {
+        "en": "Public Works Circle (sample)",
+        "mr": "सार्वजनिक बांधकाम मंडळ (नमुना)"
+      },
       "district": "Kolhapur",
-      "qualification": ["Diploma", "Graduate"],
+      "qualification": [
+        "Diploma",
+        "Graduate"
+      ],
       "posts": 74,
       "published": "2026-10-05",
       "startDate": "2026-10-05",
       "lastDate": "2026-10-20",
       "examDate": "2026-11-23",
       "salary": "₹38,600 – ₹1,22,800",
-      "age": { "en": "18–38 years", "mr": "18–38 वर्षे" },
-      "fee": { "en": "₹1000", "mr": "₹1000" },
-      "summary": { "en": "Civil engineering diploma or degree holders.", "mr": "स्थापत्य अभियांत्रिकी पदविका किंवा पदवीधारक." },
+      "age": {
+        "en": "18–38 years",
+        "mr": "18–38 वर्षे"
+      },
+      "fee": {
+        "en": "₹1000",
+        "mr": "₹1000"
+      },
+      "summary": {
+        "en": "Civil engineering diploma or degree holders.",
+        "mr": "स्थापत्य अभियांत्रिकी पदविका किंवा पदवीधारक."
+      },
       "steps": [
-        { "en": "Apply online.", "mr": "ऑनलाईन अर्ज करा." }
+        {
+          "en": "Apply online.",
+          "mr": "ऑनलाईन अर्ज करा."
+        }
       ]
     },
     {
       "id": "result-police-2025",
       "type": "result",
       "category": "police",
-      "title": { "en": "Police Constable 2025 — Final Merit List", "mr": "पोलीस शिपाई 2025 — अंतिम गुणवत्ता यादी" },
-      "org": { "en": "Godavari District Police (sample)", "mr": "गोदावरी जिल्हा पोलीस (नमुना)" },
+      "title": {
+        "en": "Police Constable 2025 — Final Merit List",
+        "mr": "पोलीस शिपाई 2025 — अंतिम गुणवत्ता यादी"
+      },
+      "org": {
+        "en": "Godavari District Police (sample)",
+        "mr": "गोदावरी जिल्हा पोलीस (नमुना)"
+      },
       "district": "Nashik",
-      "qualification": ["12th"],
+      "qualification": [
+        "12th"
+      ],
       "posts": 380,
       "published": "2026-10-25",
-      "summary": { "en": "Final selection list published district-wise with cut-off marks.", "mr": "जिल्हानिहाय अंतिम निवड यादी व कट-ऑफ गुण प्रसिद्ध." },
+      "summary": {
+        "en": "Final selection list published district-wise with cut-off marks.",
+        "mr": "जिल्हानिहाय अंतिम निवड यादी व कट-ऑफ गुण प्रसिद्ध."
+      },
       "steps": [
-        { "en": "Open the merit list PDF and search your roll number (Ctrl+F).", "mr": "गुणवत्ता यादी PDF उघडा व आपला क्रमांक शोधा (Ctrl+F)." },
-        { "en": "Selected candidates report for document verification.", "mr": "निवड झालेल्या उमेदवारांनी कागदपत्र पडताळणीसाठी हजर राहावे." }
+        {
+          "en": "Open the merit list PDF and search your roll number (Ctrl+F).",
+          "mr": "गुणवत्ता यादी PDF उघडा व आपला क्रमांक शोधा (Ctrl+F)."
+        },
+        {
+          "en": "Selected candidates report for document verification.",
+          "mr": "निवड झालेल्या उमेदवारांनी कागदपत्र पडताळणीसाठी हजर राहावे."
+        }
       ]
     },
     {
       "id": "result-bank-clerk-2026",
       "type": "result",
       "category": "bank",
-      "title": { "en": "Rural Bank Clerk Prelims Result 2026", "mr": "ग्रामीण बँक लिपिक पूर्व परीक्षा निकाल 2026" },
-      "org": { "en": "Krishna Rural Bank (sample)", "mr": "कृष्णा ग्रामीण बँक (नमुना)" },
+      "title": {
+        "en": "Rural Bank Clerk Prelims Result 2026",
+        "mr": "ग्रामीण बँक लिपिक पूर्व परीक्षा निकाल 2026"
+      },
+      "org": {
+        "en": "Krishna Rural Bank (sample)",
+        "mr": "कृष्णा ग्रामीण बँक (नमुना)"
+      },
       "district": "Satara",
-      "qualification": ["Graduate"],
+      "qualification": [
+        "Graduate"
+      ],
       "posts": 0,
       "published": "2026-10-21",
-      "summary": { "en": "Check result with registration number and date of birth.", "mr": "नोंदणी क्रमांक व जन्मतारीख टाकून निकाल पहा." },
+      "summary": {
+        "en": "Check result with registration number and date of birth.",
+        "mr": "नोंदणी क्रमांक व जन्मतारीख टाकून निकाल पहा."
+      },
       "steps": [
-        { "en": "Log in with registration number and DOB.", "mr": "नोंदणी क्रमांक व जन्मतारखेने लॉगिन करा." }
+        {
+          "en": "Log in with registration number and DOB.",
+          "mr": "नोंदणी क्रमांक व जन्मतारखेने लॉगिन करा."
+        }
       ]
     },
     {
       "id": "admit-teacher-tait-2026",
       "type": "admit",
       "category": "teaching",
-      "title": { "en": "Teacher Aptitude Test — Admit Card Released", "mr": "शिक्षक अभियोग्यता चाचणी — प्रवेशपत्र उपलब्ध" },
-      "org": { "en": "Marathwada Education Board (sample)", "mr": "मराठवाडा शिक्षण मंडळ (नमुना)" },
+      "title": {
+        "en": "Teacher Aptitude Test — Admit Card Released",
+        "mr": "शिक्षक अभियोग्यता चाचणी — प्रवेशपत्र उपलब्ध"
+      },
+      "org": {
+        "en": "Marathwada Education Board (sample)",
+        "mr": "मराठवाडा शिक्षण मंडळ (नमुना)"
+      },
       "district": "All Maharashtra",
-      "qualification": ["Graduate", "B.Ed"],
+      "qualification": [
+        "Graduate",
+        "B.Ed"
+      ],
       "posts": 0,
       "published": "2026-10-26",
       "examDate": "2026-11-09",
-      "summary": { "en": "Download the hall ticket and carry a photo ID to the centre.", "mr": "प्रवेशपत्र डाउनलोड करा व केंद्रावर ओळखपत्र सोबत ठेवा." },
+      "summary": {
+        "en": "Download the hall ticket and carry a photo ID to the centre.",
+        "mr": "प्रवेशपत्र डाउनलोड करा व केंद्रावर ओळखपत्र सोबत ठेवा."
+      },
       "steps": [
-        { "en": "Log in and download the admit card.", "mr": "लॉगिन करून प्रवेशपत्र डाउनलोड करा." },
-        { "en": "Reach the centre 60 minutes early.", "mr": "केंद्रावर 60 मिनिटे आधी पोहोचा." }
+        {
+          "en": "Log in and download the admit card.",
+          "mr": "लॉगिन करून प्रवेशपत्र डाउनलोड करा."
+        },
+        {
+          "en": "Reach the centre 60 minutes early.",
+          "mr": "केंद्रावर 60 मिनिटे आधी पोहोचा."
+        }
       ]
     },
     {
       "id": "admit-railway-2026",
       "type": "admit",
       "category": "railway",
-      "title": { "en": "Railway Technician CBT — City Intimation Slip", "mr": "रेल्वे तंत्रज्ञ CBT — परीक्षा शहर सूचना" },
-      "org": { "en": "Deccan Railway Zone (sample)", "mr": "दख्खन रेल्वे विभाग (नमुना)" },
+      "title": {
+        "en": "Railway Technician CBT — City Intimation Slip",
+        "mr": "रेल्वे तंत्रज्ञ CBT — परीक्षा शहर सूचना"
+      },
+      "org": {
+        "en": "Deccan Railway Zone (sample)",
+        "mr": "दख्खन रेल्वे विभाग (नमुना)"
+      },
       "district": "All Maharashtra",
-      "qualification": ["ITI", "Diploma"],
+      "qualification": [
+        "ITI",
+        "Diploma"
+      ],
       "posts": 0,
       "published": "2026-10-23",
       "examDate": "2026-11-16",
-      "summary": { "en": "Exam city slip is out; admit card 4 days before the exam.", "mr": "परीक्षा शहर सूचना उपलब्ध; प्रवेशपत्र परीक्षेच्या 4 दिवस आधी." },
+      "summary": {
+        "en": "Exam city slip is out; admit card 4 days before the exam.",
+        "mr": "परीक्षा शहर सूचना उपलब्ध; प्रवेशपत्र परीक्षेच्या 4 दिवस आधी."
+      },
       "steps": [
-        { "en": "Check city and date; plan travel.", "mr": "शहर व तारीख तपासा; प्रवासाचे नियोजन करा." }
+        {
+          "en": "Check city and date; plan travel.",
+          "mr": "शहर व तारीख तपासा; प्रवासाचे नियोजन करा."
+        }
       ]
     },
     {
       "id": "anskey-pwd-je-2026",
       "type": "answerkey",
       "category": "engineering",
-      "title": { "en": "Junior Engineer Exam — Provisional Answer Key", "mr": "कनिष्ठ अभियंता परीक्षा — तात्पुरती उत्तरतालिका" },
-      "org": { "en": "Public Works Circle (sample)", "mr": "सार्वजनिक बांधकाम मंडळ (नमुना)" },
+      "title": {
+        "en": "Junior Engineer Exam — Provisional Answer Key",
+        "mr": "कनिष्ठ अभियंता परीक्षा — तात्पुरती उत्तरतालिका"
+      },
+      "org": {
+        "en": "Public Works Circle (sample)",
+        "mr": "सार्वजनिक बांधकाम मंडळ (नमुना)"
+      },
       "district": "Kolhapur",
-      "qualification": ["Diploma", "Graduate"],
+      "qualification": [
+        "Diploma",
+        "Graduate"
+      ],
       "posts": 0,
       "published": "2026-10-24",
       "lastDate": "2026-10-31",
-      "summary": { "en": "Objections can be raised online until the last date with ₹100 per question.", "mr": "अंतिम तारखेपर्यंत प्रति प्रश्न ₹100 भरून ऑनलाईन आक्षेप नोंदवा." },
+      "summary": {
+        "en": "Objections can be raised online until the last date with ₹100 per question.",
+        "mr": "अंतिम तारखेपर्यंत प्रति प्रश्न ₹100 भरून ऑनलाईन आक्षेप नोंदवा."
+      },
       "steps": [
-        { "en": "Compare your responses with the key.", "mr": "आपली उत्तरे उत्तरतालिकेशी जुळवा." },
-        { "en": "Raise objections with proof.", "mr": "पुराव्यासह आक्षेप नोंदवा." }
+        {
+          "en": "Compare your responses with the key.",
+          "mr": "आपली उत्तरे उत्तरतालिकेशी जुळवा."
+        },
+        {
+          "en": "Raise objections with proof.",
+          "mr": "पुराव्यासह आक्षेप नोंदवा."
+        }
+      ]
+    },
+    {
+      "id": "court-clerk-2026",
+      "type": "job",
+      "category": "court",
+      "title": {
+        "en": "District Court Junior Clerk & Peon Recruitment",
+        "mr": "जिल्हा न्यायालय कनिष्ठ लिपिक व शिपाई भरती"
+      },
+      "org": {
+        "en": "Sahyadri District Court (sample)",
+        "mr": "सह्याद्री जिल्हा न्यायालय (नमुना)"
+      },
+      "district": "Thane",
+      "qualification": [
+        "10th",
+        "Graduate"
+      ],
+      "posts": 86,
+      "published": "2026-10-27",
+      "startDate": "2026-10-27",
+      "lastDate": "2026-11-18",
+      "examDate": "2026-12-21",
+      "salary": "₹19,900 – ₹63,200",
+      "age": {
+        "en": "18–38 years",
+        "mr": "18–38 वर्षे"
+      },
+      "fee": {
+        "en": "₹1000",
+        "mr": "₹1000"
+      },
+      "summary": {
+        "en": "Junior Clerk (graduate + typing) and Peon (10th pass) posts.",
+        "mr": "कनिष्ठ लिपिक (पदवी + टंकलेखन) व शिपाई (10वी उत्तीर्ण) पदे."
+      },
+      "steps": [
+        {
+          "en": "Read the full notification PDF.",
+          "mr": "संपूर्ण जाहिरात PDF वाचा."
+        },
+        {
+          "en": "Register and fill the online form.",
+          "mr": "नोंदणी करून ऑनलाईन अर्ज भरा."
+        },
+        {
+          "en": "Upload documents, pay the fee and print the form.",
+          "mr": "कागदपत्रे अपलोड करा, शुल्क भरा व अर्जाची प्रिंट घ्या."
+        }
+      ]
+    },
+    {
+      "id": "forest-guard-2026",
+      "type": "job",
+      "category": "forest",
+      "title": {
+        "en": "Forest Guard (Vanrakshak) Recruitment 2026",
+        "mr": "वनरक्षक भरती 2026"
+      },
+      "org": {
+        "en": "Tadoba Forest Circle (sample)",
+        "mr": "ताडोबा वन वृत्त (नमुना)"
+      },
+      "district": "Chandrapur",
+      "qualification": [
+        "12th"
+      ],
+      "posts": 210,
+      "published": "2026-10-25",
+      "startDate": "2026-10-25",
+      "lastDate": "2026-11-24",
+      "examDate": "2027-01-10",
+      "salary": "₹21,700 – ₹69,100",
+      "age": {
+        "en": "18–27 years",
+        "mr": "18–27 वर्षे"
+      },
+      "fee": {
+        "en": "Open ₹1000 · Reserved ₹900",
+        "mr": "खुला ₹1000 · मागासवर्गीय ₹900"
+      },
+      "summary": {
+        "en": "12th pass with science/geography preferred. Physical walk test of 25 km.",
+        "mr": "12वी उत्तीर्ण, विज्ञान/भूगोल प्राधान्य. 25 किमी चालण्याची चाचणी."
+      },
+      "steps": [
+        {
+          "en": "Read the full notification PDF.",
+          "mr": "संपूर्ण जाहिरात PDF वाचा."
+        },
+        {
+          "en": "Register and fill the online form.",
+          "mr": "नोंदणी करून ऑनलाईन अर्ज भरा."
+        },
+        {
+          "en": "Upload documents, pay the fee and print the form.",
+          "mr": "कागदपत्रे अपलोड करा, शुल्क भरा व अर्जाची प्रिंट घ्या."
+        }
+      ]
+    },
+    {
+      "id": "agri-assistant-2026",
+      "type": "job",
+      "category": "agriculture",
+      "title": {
+        "en": "Agriculture Assistant (Krushi Sahayak) Posts",
+        "mr": "कृषी सहाय्यक पदे"
+      },
+      "org": {
+        "en": "Deccan Agriculture Department (sample)",
+        "mr": "दख्खन कृषी विभाग (नमुना)"
+      },
+      "district": "Solapur",
+      "qualification": [
+        "Diploma",
+        "Graduate"
+      ],
+      "posts": 134,
+      "published": "2026-10-23",
+      "startDate": "2026-10-23",
+      "lastDate": "2026-11-14",
+      "examDate": "2026-12-12",
+      "salary": "₹25,500 – ₹81,100",
+      "age": {
+        "en": "19–38 years",
+        "mr": "19–38 वर्षे"
+      },
+      "fee": {
+        "en": "₹720",
+        "mr": "₹720"
+      },
+      "summary": {
+        "en": "Agriculture diploma or B.Sc (Agri) holders can apply.",
+        "mr": "कृषी पदविका किंवा B.Sc (कृषी) धारक अर्ज करू शकतात."
+      },
+      "steps": [
+        {
+          "en": "Read the full notification PDF.",
+          "mr": "संपूर्ण जाहिरात PDF वाचा."
+        },
+        {
+          "en": "Register and fill the online form.",
+          "mr": "नोंदणी करून ऑनलाईन अर्ज भरा."
+        },
+        {
+          "en": "Upload documents, pay the fee and print the form.",
+          "mr": "कागदपत्रे अपलोड करा, शुल्क भरा व अर्जाची प्रिंट घ्या."
+        }
+      ]
+    },
+    {
+      "id": "postal-gds-2026",
+      "type": "job",
+      "category": "postal",
+      "title": {
+        "en": "Gramin Dak Sevak (GDS) — Maharashtra Circle",
+        "mr": "ग्रामीण डाक सेवक (GDS) — महाराष्ट्र सर्कल"
+      },
+      "org": {
+        "en": "Sahyadri Postal Circle (sample)",
+        "mr": "सह्याद्री डाक सर्कल (नमुना)"
+      },
+      "district": "All Maharashtra",
+      "qualification": [
+        "10th"
+      ],
+      "posts": 2140,
+      "published": "2026-10-21",
+      "startDate": "2026-10-21",
+      "lastDate": "2026-11-10",
+      "salary": "₹10,000 – ₹29,380",
+      "age": {
+        "en": "18–40 years",
+        "mr": "18–40 वर्षे"
+      },
+      "fee": {
+        "en": "₹100 (women/SC/ST free)",
+        "mr": "₹100 (महिला/अजा/अज मोफत)"
+      },
+      "summary": {
+        "en": "Selection on 10th marks merit; no exam. Local language (Marathi) required.",
+        "mr": "10वीच्या गुणांवर निवड; परीक्षा नाही. मराठी भाषा आवश्यक."
+      },
+      "steps": [
+        {
+          "en": "Read the full notification PDF.",
+          "mr": "संपूर्ण जाहिरात PDF वाचा."
+        },
+        {
+          "en": "Register and fill the online form.",
+          "mr": "नोंदणी करून ऑनलाईन अर्ज भरा."
+        },
+        {
+          "en": "Upload documents, pay the fee and print the form.",
+          "mr": "कागदपत्रे अपलोड करा, शुल्क भरा व अर्जाची प्रिंट घ्या."
+        }
+      ]
+    },
+    {
+      "id": "mahavitaran-apprentice-2026",
+      "type": "job",
+      "category": "engineering",
+      "title": {
+        "en": "Electricity Board Apprentice (Electrician/Wireman)",
+        "mr": "वीज मंडळ शिकाऊ उमेदवार (इलेक्ट्रिशियन/वायरमन)"
+      },
+      "org": {
+        "en": "Western Power Distribution Co. (sample)",
+        "mr": "पश्चिम वीज वितरण कं. (नमुना)"
+      },
+      "district": "Amravati",
+      "qualification": [
+        "10th",
+        "ITI"
+      ],
+      "posts": 178,
+      "published": "2026-10-24",
+      "startDate": "2026-10-24",
+      "lastDate": "2026-10-31",
+      "salary": "Stipend as per Apprentice Act",
+      "age": {
+        "en": "18–30 years",
+        "mr": "18–30 वर्षे"
+      },
+      "fee": {
+        "en": "No fee",
+        "mr": "शुल्क नाही"
+      },
+      "summary": {
+        "en": "ITI in Electrician or Wireman trade. Merit-based selection.",
+        "mr": "इलेक्ट्रिशियन किंवा वायरमन ITI. गुणवत्तेनुसार निवड."
+      },
+      "steps": [
+        {
+          "en": "Read the full notification PDF.",
+          "mr": "संपूर्ण जाहिरात PDF वाचा."
+        },
+        {
+          "en": "Register and fill the online form.",
+          "mr": "नोंदणी करून ऑनलाईन अर्ज भरा."
+        },
+        {
+          "en": "Upload documents, pay the fee and print the form.",
+          "mr": "कागदपत्रे अपलोड करा, शुल्क भरा व अर्जाची प्रिंट घ्या."
+        }
+      ]
+    },
+    {
+      "id": "talathi-2026",
+      "type": "job",
+      "category": "revenue",
+      "title": {
+        "en": "Talathi (Village Revenue Officer) Recruitment",
+        "mr": "तलाठी भरती"
+      },
+      "org": {
+        "en": "Konkan Revenue Division (sample)",
+        "mr": "कोकण महसूल विभाग (नमुना)"
+      },
+      "district": "Ratnagiri",
+      "qualification": [
+        "Graduate"
+      ],
+      "posts": 312,
+      "published": "2026-10-26",
+      "startDate": "2026-10-26",
+      "lastDate": "2026-11-26",
+      "examDate": "2027-01-05",
+      "salary": "₹25,500 – ₹81,100",
+      "age": {
+        "en": "18–38 years",
+        "mr": "18–38 वर्षे"
+      },
+      "fee": {
+        "en": "Open ₹1000 · Reserved ₹900",
+        "mr": "खुला ₹1000 · मागासवर्गीय ₹900"
+      },
+      "summary": {
+        "en": "Graduate in any discipline with MS-CIT or equivalent computer certificate.",
+        "mr": "कोणत्याही शाखेतील पदवी व MS-CIT किंवा समकक्ष संगणक प्रमाणपत्र."
+      },
+      "steps": [
+        {
+          "en": "Read the full notification PDF.",
+          "mr": "संपूर्ण जाहिरात PDF वाचा."
+        },
+        {
+          "en": "Register and fill the online form.",
+          "mr": "नोंदणी करून ऑनलाईन अर्ज भरा."
+        },
+        {
+          "en": "Upload documents, pay the fee and print the form.",
+          "mr": "कागदपत्रे अपलोड करा, शुल्क भरा व अर्जाची प्रिंट घ्या."
+        }
+      ]
+    },
+    {
+      "id": "gramsevak-2026",
+      "type": "job",
+      "category": "rural",
+      "title": {
+        "en": "Gram Sevak (Contract) — Zilla Parishad",
+        "mr": "ग्रामसेवक (कंत्राटी) — जिल्हा परिषद"
+      },
+      "org": {
+        "en": "Sangli Zilla Parishad (sample)",
+        "mr": "सांगली जिल्हा परिषद (नमुना)"
+      },
+      "district": "Sangli",
+      "qualification": [
+        "12th",
+        "Diploma"
+      ],
+      "posts": 58,
+      "published": "2026-10-19",
+      "startDate": "2026-10-19",
+      "lastDate": "2026-11-03",
+      "salary": "₹16,000 fixed (first 3 years)",
+      "age": {
+        "en": "18–38 years",
+        "mr": "18–38 वर्षे"
+      },
+      "fee": {
+        "en": "₹500",
+        "mr": "₹500"
+      },
+      "summary": {
+        "en": "12th with 60% marks or agriculture diploma. 3-year contract, then regular scale.",
+        "mr": "12वी 60% गुण किंवा कृषी पदविका. 3 वर्षे कंत्राट, नंतर नियमित वेतनश्रेणी."
+      },
+      "steps": [
+        {
+          "en": "Read the full notification PDF.",
+          "mr": "संपूर्ण जाहिरात PDF वाचा."
+        },
+        {
+          "en": "Register and fill the online form.",
+          "mr": "नोंदणी करून ऑनलाईन अर्ज भरा."
+        },
+        {
+          "en": "Upload documents, pay the fee and print the form.",
+          "mr": "कागदपत्रे अपलोड करा, शुल्क भरा व अर्जाची प्रिंट घ्या."
+        }
+      ]
+    },
+    {
+      "id": "municipal-fireman-2026",
+      "type": "job",
+      "category": "municipal",
+      "title": {
+        "en": "Fireman & Driver-Operator Posts",
+        "mr": "अग्निशामक व वाहनचालक-यंत्रचालक पदे"
+      },
+      "org": {
+        "en": "Indrayani City Corporation (sample)",
+        "mr": "इंद्रायणी महानगरपालिका (नमुना)"
+      },
+      "district": "Pune",
+      "qualification": [
+        "10th",
+        "12th"
+      ],
+      "posts": 96,
+      "published": "2026-10-22",
+      "startDate": "2026-10-22",
+      "lastDate": "2026-11-07",
+      "examDate": "2026-12-06",
+      "salary": "₹21,700 – ₹69,100",
+      "age": {
+        "en": "18–30 years",
+        "mr": "18–30 वर्षे"
+      },
+      "fee": {
+        "en": "₹800",
+        "mr": "₹800"
+      },
+      "summary": {
+        "en": "Fire course certificate required. Heavy vehicle licence for driver posts.",
+        "mr": "अग्निशमन अभ्यासक्रम प्रमाणपत्र आवश्यक. वाहनचालकासाठी जड वाहन परवाना."
+      },
+      "steps": [
+        {
+          "en": "Read the full notification PDF.",
+          "mr": "संपूर्ण जाहिरात PDF वाचा."
+        },
+        {
+          "en": "Register and fill the online form.",
+          "mr": "नोंदणी करून ऑनलाईन अर्ज भरा."
+        },
+        {
+          "en": "Upload documents, pay the fee and print the form.",
+          "mr": "कागदपत्रे अपलोड करा, शुल्क भरा व अर्जाची प्रिंट घ्या."
+        }
+      ]
+    },
+    {
+      "id": "bank-po-2026",
+      "type": "job",
+      "category": "bank",
+      "title": {
+        "en": "Cooperative Bank Probationary Officer",
+        "mr": "सहकारी बँक परिविक्षाधीन अधिकारी"
+      },
+      "org": {
+        "en": "Godavari Urban Co-op Bank (sample)",
+        "mr": "गोदावरी नागरी सहकारी बँक (नमुना)"
+      },
+      "district": "Ahmednagar",
+      "qualification": [
+        "Graduate"
+      ],
+      "posts": 40,
+      "published": "2026-10-27",
+      "startDate": "2026-10-27",
+      "lastDate": "2026-11-16",
+      "examDate": "2026-12-13",
+      "salary": "₹35,000 – ₹55,000",
+      "age": {
+        "en": "21–30 years",
+        "mr": "21–30 वर्षे"
+      },
+      "fee": {
+        "en": "₹1180",
+        "mr": "₹1180"
+      },
+      "summary": {
+        "en": "Graduate with 50% marks. Online exam followed by interview.",
+        "mr": "50% गुणांसह पदवीधर. ऑनलाईन परीक्षा व मुलाखत."
+      },
+      "steps": [
+        {
+          "en": "Read the full notification PDF.",
+          "mr": "संपूर्ण जाहिरात PDF वाचा."
+        },
+        {
+          "en": "Register and fill the online form.",
+          "mr": "नोंदणी करून ऑनलाईन अर्ज भरा."
+        },
+        {
+          "en": "Upload documents, pay the fee and print the form.",
+          "mr": "कागदपत्रे अपलोड करा, शुल्क भरा व अर्जाची प्रिंट घ्या."
+        }
+      ]
+    },
+    {
+      "id": "bank-clerk-2026",
+      "type": "job",
+      "category": "bank",
+      "title": {
+        "en": "District Central Bank Clerk Recruitment",
+        "mr": "जिल्हा मध्यवर्ती बँक लिपिक भरती"
+      },
+      "org": {
+        "en": "Tapi District Central Co-op Bank (sample)",
+        "mr": "तापी जिल्हा मध्यवर्ती सहकारी बँक (नमुना)"
+      },
+      "district": "Jalgaon",
+      "qualification": [
+        "Graduate"
+      ],
+      "posts": 220,
+      "published": "2026-10-16",
+      "startDate": "2026-10-16",
+      "lastDate": "2026-10-28",
+      "examDate": "2026-11-29",
+      "salary": "₹22,000 – ₹40,000",
+      "age": {
+        "en": "21–35 years",
+        "mr": "21–35 वर्षे"
+      },
+      "fee": {
+        "en": "₹944",
+        "mr": "₹944"
+      },
+      "summary": {
+        "en": "Graduate with MS-CIT. Marathi typing is an advantage.",
+        "mr": "पदवीधर व MS-CIT. मराठी टंकलेखन असल्यास प्राधान्य."
+      },
+      "steps": [
+        {
+          "en": "Read the full notification PDF.",
+          "mr": "संपूर्ण जाहिरात PDF वाचा."
+        },
+        {
+          "en": "Register and fill the online form.",
+          "mr": "नोंदणी करून ऑनलाईन अर्ज भरा."
+        },
+        {
+          "en": "Upload documents, pay the fee and print the form.",
+          "mr": "कागदपत्रे अपलोड करा, शुल्क भरा व अर्जाची प्रिंट घ्या."
+        }
+      ]
+    },
+    {
+      "id": "police-driver-2026",
+      "type": "job",
+      "category": "police",
+      "title": {
+        "en": "Police Driver Constable Recruitment",
+        "mr": "पोलीस चालक शिपाई भरती"
+      },
+      "org": {
+        "en": "Vidarbha Range Police (sample)",
+        "mr": "विदर्भ परिक्षेत्र पोलीस (नमुना)"
+      },
+      "district": "Nagpur",
+      "qualification": [
+        "12th"
+      ],
+      "posts": 145,
+      "published": "2026-10-20",
+      "startDate": "2026-10-20",
+      "lastDate": "2026-11-12",
+      "examDate": "2026-12-19",
+      "salary": "₹21,700 – ₹69,100",
+      "age": {
+        "en": "19–28 years",
+        "mr": "19–28 वर्षे"
+      },
+      "fee": {
+        "en": "Open ₹450 · Reserved ₹350",
+        "mr": "खुला ₹450 · मागासवर्गीय ₹350"
+      },
+      "summary": {
+        "en": "Valid LMV licence required. Driving skill test after physical test.",
+        "mr": "वैध LMV परवाना आवश्यक. शारीरिक चाचणीनंतर वाहन चालविण्याची चाचणी."
+      },
+      "steps": [
+        {
+          "en": "Read the full notification PDF.",
+          "mr": "संपूर्ण जाहिरात PDF वाचा."
+        },
+        {
+          "en": "Register and fill the online form.",
+          "mr": "नोंदणी करून ऑनलाईन अर्ज भरा."
+        },
+        {
+          "en": "Upload documents, pay the fee and print the form.",
+          "mr": "कागदपत्रे अपलोड करा, शुल्क भरा व अर्जाची प्रिंट घ्या."
+        }
+      ]
+    },
+    {
+      "id": "srpf-2026",
+      "type": "job",
+      "category": "police",
+      "title": {
+        "en": "State Reserve Police Force (SRPF) Constable",
+        "mr": "राज्य राखीव पोलीस बल (SRPF) शिपाई"
+      },
+      "org": {
+        "en": "SRPF Group 9 (sample)",
+        "mr": "राराखीव पोलीस बल गट 9 (नमुना)"
+      },
+      "district": "Latur",
+      "qualification": [
+        "12th"
+      ],
+      "posts": 380,
+      "published": "2026-10-24",
+      "startDate": "2026-10-24",
+      "lastDate": "2026-11-21",
+      "examDate": "2027-01-11",
+      "salary": "₹21,700 – ₹69,100",
+      "age": {
+        "en": "18–25 years",
+        "mr": "18–25 वर्षे"
+      },
+      "fee": {
+        "en": "Open ₹450 · Reserved ₹350",
+        "mr": "खुला ₹450 · मागासवर्गीय ₹350"
+      },
+      "summary": {
+        "en": "Higher physical standards than district police. 5 km run.",
+        "mr": "जिल्हा पोलिसांपेक्षा अधिक शारीरिक निकष. 5 किमी धावणे."
+      },
+      "steps": [
+        {
+          "en": "Read the full notification PDF.",
+          "mr": "संपूर्ण जाहिरात PDF वाचा."
+        },
+        {
+          "en": "Register and fill the online form.",
+          "mr": "नोंदणी करून ऑनलाईन अर्ज भरा."
+        },
+        {
+          "en": "Upload documents, pay the fee and print the form.",
+          "mr": "कागदपत्रे अपलोड करा, शुल्क भरा व अर्जाची प्रिंट घ्या."
+        }
+      ]
+    },
+    {
+      "id": "navy-civilian-2026",
+      "type": "job",
+      "category": "defence",
+      "title": {
+        "en": "Naval Dockyard Civilian Tradesman Mate",
+        "mr": "नौदल गोदी नागरी ट्रेड्समन मेट"
+      },
+      "org": {
+        "en": "Western Naval Dockyard (sample)",
+        "mr": "पश्चिम नौदल गोदी (नमुना)"
+      },
+      "district": "Mumbai",
+      "qualification": [
+        "10th",
+        "ITI"
+      ],
+      "posts": 265,
+      "published": "2026-10-18",
+      "startDate": "2026-10-18",
+      "lastDate": "2026-11-15",
+      "examDate": "2026-12-27",
+      "salary": "₹18,000 – ₹56,900",
+      "age": {
+        "en": "18–25 years",
+        "mr": "18–25 वर्षे"
+      },
+      "fee": {
+        "en": "₹295",
+        "mr": "₹295"
+      },
+      "summary": {
+        "en": "10th pass with ITI in a relevant trade.",
+        "mr": "10वी उत्तीर्ण व संबंधित ट्रेडमध्ये ITI."
+      },
+      "steps": [
+        {
+          "en": "Read the full notification PDF.",
+          "mr": "संपूर्ण जाहिरात PDF वाचा."
+        },
+        {
+          "en": "Register and fill the online form.",
+          "mr": "नोंदणी करून ऑनलाईन अर्ज भरा."
+        },
+        {
+          "en": "Upload documents, pay the fee and print the form.",
+          "mr": "कागदपत्रे अपलोड करा, शुल्क भरा व अर्जाची प्रिंट घ्या."
+        }
+      ]
+    },
+    {
+      "id": "medical-officer-2026",
+      "type": "job",
+      "category": "health",
+      "title": {
+        "en": "Medical Officer (MBBS) — Contract",
+        "mr": "वैद्यकीय अधिकारी (MBBS) — कंत्राटी"
+      },
+      "org": {
+        "en": "National Health Mission District Unit (sample)",
+        "mr": "राष्ट्रीय आरोग्य अभियान जिल्हा कक्ष (नमुना)"
+      },
+      "district": "Nashik",
+      "qualification": [
+        "MBBS"
+      ],
+      "posts": 32,
+      "published": "2026-10-25",
+      "startDate": "2026-10-25",
+      "lastDate": "2026-11-04",
+      "salary": "₹60,000 per month",
+      "age": {
+        "en": "Up to 70 years",
+        "mr": "70 वर्षांपर्यंत"
+      },
+      "fee": {
+        "en": "₹150",
+        "mr": "₹150"
+      },
+      "summary": {
+        "en": "Walk-in interview. Bring originals and one set of copies.",
+        "mr": "थेट मुलाखत. मूळ कागदपत्रे व एक प्रत सोबत आणा."
+      },
+      "steps": [
+        {
+          "en": "Read the full notification PDF.",
+          "mr": "संपूर्ण जाहिरात PDF वाचा."
+        },
+        {
+          "en": "Register and fill the online form.",
+          "mr": "नोंदणी करून ऑनलाईन अर्ज भरा."
+        },
+        {
+          "en": "Upload documents, pay the fee and print the form.",
+          "mr": "कागदपत्रे अपलोड करा, शुल्क भरा व अर्जाची प्रिंट घ्या."
+        }
+      ]
+    },
+    {
+      "id": "pharmacist-2026",
+      "type": "job",
+      "category": "health",
+      "title": {
+        "en": "Pharmacist & Lab Technician Posts",
+        "mr": "औषधनिर्माता व प्रयोगशाळा तंत्रज्ञ पदे"
+      },
+      "org": {
+        "en": "Civil Hospital Group (sample)",
+        "mr": "जिल्हा रुग्णालय समूह (नमुना)"
+      },
+      "district": "Kolhapur",
+      "qualification": [
+        "Diploma",
+        "Graduate"
+      ],
+      "posts": 48,
+      "published": "2026-10-17",
+      "startDate": "2026-10-17",
+      "lastDate": "2026-11-09",
+      "examDate": "2026-12-14",
+      "salary": "₹29,200 – ₹92,300",
+      "age": {
+        "en": "18–38 years",
+        "mr": "18–38 वर्षे"
+      },
+      "fee": {
+        "en": "₹1000",
+        "mr": "₹1000"
+      },
+      "summary": {
+        "en": "D.Pharm/B.Pharm or DMLT/B.Sc (MLT) with council registration.",
+        "mr": "D.Pharm/B.Pharm किंवा DMLT/B.Sc (MLT) व परिषद नोंदणी."
+      },
+      "steps": [
+        {
+          "en": "Read the full notification PDF.",
+          "mr": "संपूर्ण जाहिरात PDF वाचा."
+        },
+        {
+          "en": "Register and fill the online form.",
+          "mr": "नोंदणी करून ऑनलाईन अर्ज भरा."
+        },
+        {
+          "en": "Upload documents, pay the fee and print the form.",
+          "mr": "कागदपत्रे अपलोड करा, शुल्क भरा व अर्जाची प्रिंट घ्या."
+        }
+      ]
+    },
+    {
+      "id": "professor-2026",
+      "type": "job",
+      "category": "teaching",
+      "title": {
+        "en": "Assistant Professor — Government Colleges",
+        "mr": "सहाय्यक प्राध्यापक — शासकीय महाविद्यालये"
+      },
+      "org": {
+        "en": "Deccan Higher Education Board (sample)",
+        "mr": "दख्खन उच्च शिक्षण मंडळ (नमुना)"
+      },
+      "district": "Pune",
+      "qualification": [
+        "Post Graduate"
+      ],
+      "posts": 118,
+      "published": "2026-10-14",
+      "startDate": "2026-10-14",
+      "lastDate": "2026-11-28",
+      "salary": "₹57,700 – ₹1,82,400",
+      "age": {
+        "en": "Up to 45 years",
+        "mr": "45 वर्षांपर्यंत"
+      },
+      "fee": {
+        "en": "₹1500",
+        "mr": "₹1500"
+      },
+      "summary": {
+        "en": "PG with 55% and NET/SET/PhD.",
+        "mr": "55% गुणांसह पदव्युत्तर व NET/SET/PhD."
+      },
+      "steps": [
+        {
+          "en": "Read the full notification PDF.",
+          "mr": "संपूर्ण जाहिरात PDF वाचा."
+        },
+        {
+          "en": "Register and fill the online form.",
+          "mr": "नोंदणी करून ऑनलाईन अर्ज भरा."
+        },
+        {
+          "en": "Upload documents, pay the fee and print the form.",
+          "mr": "कागदपत्रे अपलोड करा, शुल्क भरा व अर्जाची प्रिंट घ्या."
+        }
+      ]
+    },
+    {
+      "id": "anganwadi-2026",
+      "type": "job",
+      "category": "rural",
+      "title": {
+        "en": "Anganwadi Sevika & Madatnis Posts",
+        "mr": "अंगणवाडी सेविका व मदतनीस पदे"
+      },
+      "org": {
+        "en": "Integrated Child Development Project (sample)",
+        "mr": "एकात्मिक बाल विकास प्रकल्प (नमुना)"
+      },
+      "district": "Jalgaon",
+      "qualification": [
+        "10th",
+        "12th"
+      ],
+      "posts": 164,
+      "published": "2026-10-26",
+      "startDate": "2026-10-26",
+      "lastDate": "2026-11-11",
+      "salary": "₹8,325 – ₹10,000 honorarium",
+      "age": {
+        "en": "18–35 years",
+        "mr": "18–35 वर्षे"
+      },
+      "fee": {
+        "en": "No fee",
+        "mr": "शुल्क नाही"
+      },
+      "summary": {
+        "en": "Women candidates from the same village/ward only. Offline application.",
+        "mr": "फक्त त्याच गावातील/वॉर्डातील महिला उमेदवार. ऑफलाईन अर्ज."
+      },
+      "steps": [
+        {
+          "en": "Read the full notification PDF.",
+          "mr": "संपूर्ण जाहिरात PDF वाचा."
+        },
+        {
+          "en": "Register and fill the online form.",
+          "mr": "नोंदणी करून ऑनलाईन अर्ज भरा."
+        },
+        {
+          "en": "Upload documents, pay the fee and print the form.",
+          "mr": "कागदपत्रे अपलोड करा, शुल्क भरा व अर्जाची प्रिंट घ्या."
+        }
+      ]
+    },
+    {
+      "id": "metro-2026",
+      "type": "job",
+      "category": "transport",
+      "title": {
+        "en": "Metro Rail Station Controller & Maintainer",
+        "mr": "मेट्रो रेल्वे स्टेशन कंट्रोलर व मेंटेनर"
+      },
+      "org": {
+        "en": "Orange City Metro (sample)",
+        "mr": "ऑरेंज सिटी मेट्रो (नमुना)"
+      },
+      "district": "Nagpur",
+      "qualification": [
+        "Diploma",
+        "Graduate",
+        "ITI"
+      ],
+      "posts": 152,
+      "published": "2026-10-21",
+      "startDate": "2026-10-21",
+      "lastDate": "2026-11-19",
+      "examDate": "2026-12-20",
+      "salary": "₹25,000 – ₹80,000",
+      "age": {
+        "en": "18–28 years",
+        "mr": "18–28 वर्षे"
+      },
+      "fee": {
+        "en": "₹590",
+        "mr": "₹590"
+      },
+      "summary": {
+        "en": "Engineering diploma/degree for controller; ITI for maintainer.",
+        "mr": "कंट्रोलरसाठी अभियांत्रिकी पदविका/पदवी; मेंटेनरसाठी ITI."
+      },
+      "steps": [
+        {
+          "en": "Read the full notification PDF.",
+          "mr": "संपूर्ण जाहिरात PDF वाचा."
+        },
+        {
+          "en": "Register and fill the online form.",
+          "mr": "नोंदणी करून ऑनलाईन अर्ज भरा."
+        },
+        {
+          "en": "Upload documents, pay the fee and print the form.",
+          "mr": "कागदपत्रे अपलोड करा, शुल्क भरा व अर्जाची प्रिंट घ्या."
+        }
+      ]
+    },
+    {
+      "id": "result-talathi-2025",
+      "type": "result",
+      "category": "revenue",
+      "title": {
+        "en": "Talathi 2025 — Selection List Published",
+        "mr": "तलाठी 2025 — निवड यादी प्रसिद्ध"
+      },
+      "org": {
+        "en": "Konkan Revenue Division (sample)",
+        "mr": "कोकण महसूल विभाग (नमुना)"
+      },
+      "district": "Ratnagiri",
+      "qualification": [
+        "Graduate"
+      ],
+      "posts": 290,
+      "published": "2026-10-26",
+      "summary": {
+        "en": "District-wise selection and waiting list with cut-offs.",
+        "mr": "जिल्हानिहाय निवड यादी व प्रतीक्षा यादी, कट-ऑफसह."
+      },
+      "steps": [
+        {
+          "en": "Open the result link and enter your roll number.",
+          "mr": "निकाल लिंक उघडा व बैठक क्रमांक टाका."
+        },
+        {
+          "en": "Download the score card for your records.",
+          "mr": "गुणपत्रक डाउनलोड करून ठेवा."
+        }
+      ]
+    },
+    {
+      "id": "result-forest-2025",
+      "type": "result",
+      "category": "forest",
+      "title": {
+        "en": "Forest Guard 2025 — Physical Test Result",
+        "mr": "वनरक्षक 2025 — शारीरिक चाचणी निकाल"
+      },
+      "org": {
+        "en": "Tadoba Forest Circle (sample)",
+        "mr": "ताडोबा वन वृत्त (नमुना)"
+      },
+      "district": "Chandrapur",
+      "qualification": [
+        "12th"
+      ],
+      "posts": 0,
+      "published": "2026-10-22",
+      "summary": {
+        "en": "Qualified candidates called for document verification.",
+        "mr": "पात्र उमेदवारांना कागदपत्र पडताळणीसाठी बोलावले."
+      },
+      "steps": [
+        {
+          "en": "Open the result link and enter your roll number.",
+          "mr": "निकाल लिंक उघडा व बैठक क्रमांक टाका."
+        },
+        {
+          "en": "Download the score card for your records.",
+          "mr": "गुणपत्रक डाउनलोड करून ठेवा."
+        }
+      ]
+    },
+    {
+      "id": "result-gds-2026",
+      "type": "result",
+      "category": "postal",
+      "title": {
+        "en": "GDS Merit List — First Round",
+        "mr": "GDS गुणवत्ता यादी — पहिली फेरी"
+      },
+      "org": {
+        "en": "Sahyadri Postal Circle (sample)",
+        "mr": "सह्याद्री डाक सर्कल (नमुना)"
+      },
+      "district": "All Maharashtra",
+      "qualification": [
+        "10th"
+      ],
+      "posts": 0,
+      "published": "2026-10-27",
+      "summary": {
+        "en": "Shortlisted candidates must verify documents within 15 days.",
+        "mr": "निवड झालेल्यांनी 15 दिवसांत कागदपत्र पडताळणी करावी."
+      },
+      "steps": [
+        {
+          "en": "Open the result link and enter your roll number.",
+          "mr": "निकाल लिंक उघडा व बैठक क्रमांक टाका."
+        },
+        {
+          "en": "Download the score card for your records.",
+          "mr": "गुणपत्रक डाउनलोड करून ठेवा."
+        }
+      ]
+    },
+    {
+      "id": "admit-police-2026",
+      "type": "admit",
+      "category": "police",
+      "title": {
+        "en": "Police Constable Written Exam Hall Ticket",
+        "mr": "पोलीस शिपाई लेखी परीक्षा प्रवेशपत्र"
+      },
+      "org": {
+        "en": "Godavari District Police (sample)",
+        "mr": "गोदावरी जिल्हा पोलीस (नमुना)"
+      },
+      "district": "Nashik",
+      "qualification": [
+        "12th"
+      ],
+      "posts": 0,
+      "published": "2026-10-27",
+      "examDate": "2026-11-08",
+      "summary": {
+        "en": "Hall ticket available; exam in two shifts.",
+        "mr": "प्रवेशपत्र उपलब्ध; परीक्षा दोन सत्रांत."
+      },
+      "steps": [
+        {
+          "en": "Log in with registration number and date of birth.",
+          "mr": "नोंदणी क्रमांक व जन्मतारखेने लॉगिन करा."
+        },
+        {
+          "en": "Print the admit card; carry photo ID to the centre.",
+          "mr": "प्रवेशपत्र प्रिंट करा; ओळखपत्र सोबत ठेवा."
+        }
+      ]
+    },
+    {
+      "id": "admit-bank-2026",
+      "type": "admit",
+      "category": "bank",
+      "title": {
+        "en": "Rural Bank Officer Mains Admit Card",
+        "mr": "ग्रामीण बँक अधिकारी मुख्य परीक्षा प्रवेशपत्र"
+      },
+      "org": {
+        "en": "Krishna Rural Bank (sample)",
+        "mr": "कृष्णा ग्रामीण बँक (नमुना)"
+      },
+      "district": "Satara",
+      "qualification": [
+        "Graduate"
+      ],
+      "posts": 0,
+      "published": "2026-10-25",
+      "examDate": "2026-11-15",
+      "summary": {
+        "en": "Download before the exam; no admit card sent by post.",
+        "mr": "परीक्षेपूर्वी डाउनलोड करा; पोस्टाने पाठवले जाणार नाही."
+      },
+      "steps": [
+        {
+          "en": "Log in with registration number and date of birth.",
+          "mr": "नोंदणी क्रमांक व जन्मतारखेने लॉगिन करा."
+        },
+        {
+          "en": "Print the admit card; carry photo ID to the centre.",
+          "mr": "प्रवेशपत्र प्रिंट करा; ओळखपत्र सोबत ठेवा."
+        }
+      ]
+    },
+    {
+      "id": "anskey-police-2026",
+      "type": "answerkey",
+      "category": "police",
+      "title": {
+        "en": "SRPF Written Exam — Answer Key",
+        "mr": "SRPF लेखी परीक्षा — उत्तरतालिका"
+      },
+      "org": {
+        "en": "SRPF Group 9 (sample)",
+        "mr": "राराखीव पोलीस बल गट 9 (नमुना)"
+      },
+      "district": "Latur",
+      "qualification": [
+        "12th"
+      ],
+      "posts": 0,
+      "published": "2026-10-26",
+      "lastDate": "2026-11-02",
+      "summary": {
+        "en": "Provisional key; objections allowed for 7 days.",
+        "mr": "तात्पुरती उत्तरतालिका; 7 दिवस आक्षेप नोंदवता येतील."
+      },
+      "steps": [
+        {
+          "en": "Download the key and match your answers.",
+          "mr": "उत्तरतालिका डाउनलोड करून उत्तरे जुळवा."
+        },
+        {
+          "en": "Raise objections online before the last date.",
+          "mr": "अंतिम तारखेपूर्वी ऑनलाईन आक्षेप नोंदवा."
+        }
+      ]
+    },
+    {
+      "id": "anskey-teacher-2026",
+      "type": "answerkey",
+      "category": "teaching",
+      "title": {
+        "en": "Teacher Aptitude Test — Final Answer Key",
+        "mr": "शिक्षक अभियोग्यता चाचणी — अंतिम उत्तरतालिका"
+      },
+      "org": {
+        "en": "Marathwada Education Board (sample)",
+        "mr": "मराठवाडा शिक्षण मंडळ (नमुना)"
+      },
+      "district": "All Maharashtra",
+      "qualification": [
+        "Graduate",
+        "B.Ed"
+      ],
+      "posts": 0,
+      "published": "2026-10-20",
+      "summary": {
+        "en": "Final key after objections; results expected soon.",
+        "mr": "आक्षेपांनंतर अंतिम उत्तरतालिका; निकाल लवकरच."
+      },
+      "steps": [
+        {
+          "en": "Download the key and match your answers.",
+          "mr": "उत्तरतालिका डाउनलोड करून उत्तरे जुळवा."
+        },
+        {
+          "en": "Raise objections online before the last date.",
+          "mr": "अंतिम तारखेपूर्वी ऑनलाईन आक्षेप नोंदवा."
+        }
       ]
     }
   ]
