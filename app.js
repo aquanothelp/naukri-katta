@@ -7,6 +7,7 @@
   const store = {
     get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch { return d; } },
     set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch { /* private mode */ } },
+    del(k) { try { localStorage.removeItem(k); } catch { /* ignore */ } },
   };
 
   // ---------- i18n ----------
@@ -22,6 +23,7 @@
       all: "All", district: "District", qualification: "Qualification", sort: "Sort by",
       sortLast: "Last date (soonest)", sortNew: "Newest first", sortPosts: "Most posts",
       openOnly: "Open only", showing: (n) => `${n} notice${n === 1 ? "" : "s"}`, reset: "Reset filters",
+      gridView: "Grid view", listView: "List view",
       posts: (n) => n ? `${n.toLocaleString("en-IN")} posts` : "Posts: see notice",
       daysLeft: (d) => `${d} days left`, lastDay: "Last day today", closed: "Closed", tomorrow: "Ends tomorrow",
       published: "Published", newTag: "NEW",
@@ -36,8 +38,7 @@
       toastSaved: "Saved to your list", toastRemoved: "Removed from saved", toastCopied: "Link copied",
       toastIcs: "Reminder file downloaded — open it to add to your calendar",
       notFound: "This notice was not found.", loadErr: "Could not load notices. Please refresh.",
-      cats: { police: "Police", bank: "Bank", railway: "Railway", defence: "Defence", teaching: "Teaching", health: "Health", municipal: "Municipal", transport: "Transport", engineering: "Engineering" },
-      langBtn: "मराठी",
+      cats: { police: "Police", bank: "Bank", railway: "Railway", defence: "Defence", teaching: "Teaching", health: "Health", municipal: "Municipal", transport: "Transport", engineering: "Engineering", court: "Court", forest: "Forest", agriculture: "Agriculture", postal: "Postal", revenue: "Revenue", rural: "Rural / ZP" },
     },
     mr: {
       brand: "नोकरी कट्टा", tagline: "नोकरी · निकाल · प्रवेशपत्र",
@@ -50,6 +51,7 @@
       all: "सर्व", district: "जिल्हा", qualification: "शिक्षण", sort: "क्रम",
       sortLast: "अंतिम तारीख (जवळची)", sortNew: "नवीन आधी", sortPosts: "जास्त पदे",
       openOnly: "फक्त सुरू", showing: (n) => `${n} जाहिराती`, reset: "फिल्टर काढा",
+      gridView: "ग्रिड दृश्य", listView: "यादी दृश्य",
       posts: (n) => n ? `${n.toLocaleString("en-IN")} पदे` : "पदे: जाहिरात पहा",
       daysLeft: (d) => `${d} दिवस बाकी`, lastDay: "आज शेवटचा दिवस", closed: "बंद", tomorrow: "उद्या शेवट",
       published: "प्रसिद्ध", newTag: "नवीन",
@@ -64,18 +66,20 @@
       toastSaved: "यादीत जतन केले", toastRemoved: "जतन यादीतून काढले", toastCopied: "लिंक कॉपी केली",
       toastIcs: "आठवण फाईल डाउनलोड झाली — कॅलेंडरमध्ये जोडण्यासाठी उघडा",
       notFound: "ही जाहिरात सापडली नाही.", loadErr: "जाहिराती लोड झाल्या नाहीत. पुन्हा रिफ्रेश करा.",
-      cats: { police: "पोलीस", bank: "बँक", railway: "रेल्वे", defence: "संरक्षण", teaching: "शिक्षक", health: "आरोग्य", municipal: "महानगरपालिका", transport: "परिवहन", engineering: "अभियांत्रिकी" },
-      langBtn: "English",
+      cats: { police: "पोलीस", bank: "बँक", railway: "रेल्वे", defence: "संरक्षण", teaching: "शिक्षक", health: "आरोग्य", municipal: "महानगरपालिका", transport: "परिवहन", engineering: "अभियांत्रिकी", court: "न्यायालय", forest: "वन विभाग", agriculture: "कृषी", postal: "टपाल", revenue: "महसूल", rural: "ग्रामीण / जि.प." },
     },
   };
-  const CAT_ICON = { police: "🚓", bank: "🏦", railway: "🚆", defence: "🎖️", teaching: "📚", health: "🩺", municipal: "🏛️", transport: "🚌", engineering: "🛠️" };
-  const CAT_COLOR = { police: "#1d4ed8", bank: "#7c3aed", railway: "#b91c1c", defence: "#4d7c0f", teaching: "#c2410c", health: "#0e7490", municipal: "#0f766e", transport: "#a16207", engineering: "#475569" };
+  const CAT_ICON = { police: "🚓", bank: "🏦", railway: "🚆", defence: "🎖️", teaching: "📚", health: "🩺", municipal: "🏛️", transport: "🚌", engineering: "🛠️", court: "⚖️", forest: "🌳", agriculture: "🌾", postal: "📮", revenue: "📜", rural: "🏡" };
+  const CAT_COLOR = { police: "#1d4ed8", bank: "#7c3aed", railway: "#b91c1c", defence: "#4d7c0f", teaching: "#c2410c", health: "#0e7490", municipal: "#0f766e", transport: "#a16207", engineering: "#475569", court: "#6d28d9", forest: "#166534", agriculture: "#65a30d", postal: "#be123c", revenue: "#92400e", rural: "#0369a1" };
   const TYPES = ["job", "result", "admit", "answerkey"];
+  const QUALS = ["10th", "12th", "ITI", "Diploma", "Graduate", "Post Graduate", "B.Ed", "MBBS"];
 
   // ---------- state ----------
   const state = {
     items: [],
+    published: [],
     lang: store.get("lang", "en"),
+    view: store.get("view", "grid"),
     saved: new Set(store.get("saved", [])),
     f: { type: "job", q: "", cat: "", district: "", qual: "", sort: "last", openOnly: true },
   };
@@ -86,6 +90,7 @@
   const $ = (s, r = document) => r.querySelector(s);
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const today = () => { const d = new Date(); d.setHours(0, 0, 0, 0); return d; };
+  const isoToday = () => { const d = today(); return new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 10); };
   const parse = (s) => (s ? new Date(s + "T00:00:00") : null);
   const daysLeft = (s) => (s ? Math.round((parse(s) - today()) / DAY) : null);
   const fmtDate = (s) => (s ? parse(s).toLocaleDateString(state.lang === "mr" ? "mr-IN" : "en-IN", { day: "numeric", month: "short", year: "numeric" }) : "—");
@@ -93,6 +98,7 @@
   const isOpen = (it) => it.type !== "job" || daysLeft(it.lastDate) === null || daysLeft(it.lastDate) >= 0;
   const initials = (it) => L(it.org).replace(/\(.*?\)/g, "").trim().split(/\s+/).slice(0, 2).map((w) => w[0]).join("").toUpperCase();
   const debounce = (fn, ms) => { let h; return (...a) => { clearTimeout(h); h = setTimeout(() => fn(...a), ms); }; };
+  const clone = (o) => JSON.parse(JSON.stringify(o));
 
   let toastTimer;
   function toast(msg) {
@@ -100,7 +106,7 @@
     el.textContent = msg;
     el.classList.add("show");
     clearTimeout(toastTimer);
-    toastTimer = setTimeout(() => el.classList.remove("show"), 2400);
+    toastTimer = setTimeout(() => el.classList.remove("show"), 2600);
   }
 
   function badge(it) {
@@ -126,6 +132,8 @@
     share: '<svg viewBox="0 0 24 24"><path d="M18 16a3 3 0 0 0-2.4 1.2l-6.7-3.4a3 3 0 0 0 0-1.6l6.7-3.4A3 3 0 1 0 15 7l-6.7 3.4a3 3 0 1 0 0 3.2L15 17a3 3 0 1 0 3-1z"/></svg>',
     ext: '<svg viewBox="0 0 24 24"><path d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3zM5 5h6v2H5v12h12v-6h2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/></svg>',
     wa: '<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6-.3.4c.1.2.6 1 1.3 1.6.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1l.7-.9c.2-.2.3-.2.6-.1l1.9.9c.3.1.4.2.5.3.1.2.1.8-.1 1.4z"/></svg>',
+    grid: '<svg viewBox="0 0 24 24"><path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/></svg>',
+    list: '<svg viewBox="0 0 24 24"><path d="M3 4h18v4H3V4zm0 6h18v4H3v-4zm0 6h18v4H3v-4z"/></svg>',
   };
 
   // ---------- filtering ----------
@@ -156,7 +164,7 @@
     return list.sort(by[f.sort] || by.last);
   }
 
-  // ---------- views ----------
+  // ---------- public views ----------
   function cardHTML(it, i = 0) {
     const savedOn = state.saved.has(it.id);
     const color = CAT_COLOR[it.category] || "#0f766e";
@@ -181,11 +189,16 @@
     </article>`;
   }
 
+  const viewToggleHTML = () => `<div class="view-toggle" role="group" aria-label="View">
+      <button data-view="grid" aria-pressed="${state.view === "grid"}" title="${esc(t().gridView)}" aria-label="${esc(t().gridView)}">${ICON.grid}</button>
+      <button data-view="list" aria-pressed="${state.view === "list"}" title="${esc(t().listView)}" aria-label="${esc(t().listView)}">${ICON.list}</button>
+    </div>`;
+
   function renderHome() {
     const { f } = state;
     const jobs = state.items.filter((i) => i.type === "job");
     const open = jobs.filter(isOpen);
-    const soon = open.filter((i) => daysLeft(i.lastDate) <= 7);
+    const soon = open.filter((i) => daysLeft(i.lastDate) !== null && daysLeft(i.lastDate) <= 7);
     const posts = open.reduce((s, i) => s + (i.posts || 0), 0);
     const ofType = state.items.filter((i) => i.type === f.type);
     const cats = [...new Set(ofType.map((i) => i.category))];
@@ -230,8 +243,11 @@
           <label class="toggle"><input type="checkbox" id="fOpen" ${f.openOnly ? "checked" : ""}>${esc(t().openOnly)}</label></div>
       </div>
 
-      <div class="result-line"><span id="countLine"></span><button class="linkish" id="resetBtn" hidden>${esc(t().reset)}</button></div>
-      <div class="grid" id="list"></div>`;
+      <div class="result-line">
+        <span id="countLine"></span>
+        <div class="result-right"><button class="linkish" id="resetBtn" hidden>${esc(t().reset)}</button>${viewToggleHTML()}</div>
+      </div>
+      <div class="grid ${state.view}" id="list"></div>`;
 
     renderList();
     animateCounts();
@@ -272,6 +288,10 @@
     const related = state.items.filter((i) => i.id !== it.id && (i.category === it.category || i.district === it.district)).slice(0, 4);
     const fact = (label, val) => (val ? `<div class="fact"><span>${esc(label)}</span><b>${esc(val)}</b></div>` : "");
     const dateRow = (label, val) => (val ? `<tr><td>${esc(label)}</td><td>${esc(fmtDate(val))}</td></tr>` : "");
+    const linkBtn = (url, cls, label) => url
+      ? `<a class="btn ${cls}" href="${esc(url)}" target="_blank" rel="noopener">${ICON.ext}${esc(label)}</a>`
+      : `<a class="btn ${cls}" href="#" data-sample>${cls ? ICON.ext : ""}${esc(label)}</a>`;
+    const links = it.links || {};
 
     $("#view").innerHTML = `
       <a class="back" href="#/">← ${esc(t().back)}</a>
@@ -303,8 +323,7 @@
         <aside class="side">
           <section class="panel">
             ${d !== null ? `<div class="countdown ${d < 0 ? "closed" : ""}"><b>${d < 0 ? "—" : d}</b><span>${esc(d < 0 ? t().closed : d === 0 ? t().lastDay : t().daysToGo)}</span></div>` : ""}
-            <a class="btn primary" href="#" data-sample>${ICON.ext}${esc(it.type === "job" ? t().applyNow : t().readNotice)}</a>
-            ${it.type === "job" ? `<a class="btn" href="#" data-sample>${esc(t().readNotice)}</a>` : ""}
+            ${it.type === "job" ? linkBtn(links.apply, "primary", t().applyNow) + linkBtn(links.notice, "", t().readNotice) : linkBtn(links.notice || links.apply, "primary", t().readNotice)}
             <div class="row-btns" style="margin-bottom:10px">
               <button class="btn" data-save="${esc(it.id)}" aria-pressed="${savedOn}">${savedOn ? ICON.bookmark : ICON.bookmarkO}${esc(savedOn ? t().saved : t().save)}</button>
               <button class="btn" id="shareBtn">${ICON.share}${esc(t().share)}</button>
@@ -330,12 +349,206 @@
     const list = state.items.filter((i) => state.saved.has(i.id));
     $("#view").innerHTML = `
       <a class="back" href="#/">← ${esc(t().back)}</a>
-      <div class="section-title"><h1>${esc(t().savedTitle)}</h1><span class="muted">${esc(t().showing(list.length))}</span></div>
-      <div class="grid" id="list">${list.length ? list.map(cardHTML).join("") : `<div class="empty" style="grid-column:1/-1"><div class="big">🔖</div><p>${esc(t().savedEmpty)}</p></div>`}</div>`;
+      <div class="section-title"><h1>${esc(t().savedTitle)}</h1><div class="result-right"><span class="muted">${esc(t().showing(list.length))}</span>${viewToggleHTML()}</div></div>
+      <div class="grid ${state.view}" id="list">${list.length ? list.map(cardHTML).join("") : `<div class="empty" style="grid-column:1/-1"><div class="big">🔖</div><p>${esc(t().savedEmpty)}</p></div>`}</div>`;
   }
 
   function renderSkeleton() {
     $("#view").innerHTML = `<div class="hero" style="height:220px"></div><div class="grid">${'<div class="skeleton"></div>'.repeat(6)}</div>`;
+  }
+
+  // ---------- admin (English only, prototype) ----------
+  // Dummy admin: edits are saved in this browser's localStorage only — nothing is sent anywhere.
+  const adminF = { q: "", type: "" };
+  let editing = null;
+
+  const hasDraft = () => !!store.get("draft", null);
+  function setItems(items) {
+    state.items = items;
+    store.set("draft", { items });
+    updateDraftBanner();
+  }
+  function updateDraftBanner() {
+    $("#draftBanner").hidden = !hasDraft() || location.hash.startsWith("#/admin");
+  }
+  function changeOf(it) {
+    const p = state.published.find((x) => x.id === it.id);
+    if (!p) return "new";
+    return JSON.stringify(p) === JSON.stringify(it) ? "" : "edited";
+  }
+  function changeCounts() {
+    const ids = new Set(state.items.map((i) => i.id));
+    const c = { new: 0, edited: 0, deleted: state.published.filter((p) => !ids.has(p.id)).length };
+    state.items.forEach((i) => { const k = changeOf(i); if (k) c[k]++; });
+    c.total = c.new + c.edited + c.deleted;
+    return c;
+  }
+
+  function renderAdmin() {
+    document.title = `Admin — ${T.en.brand}`;
+    const c = changeCounts();
+    const q = adminF.q.trim().toLowerCase();
+    const rows = state.items
+      .filter((i) => !adminF.type || i.type === adminF.type)
+      .filter((i) => !q || [i.id, i.title.en, i.title.mr, i.org.en, i.district].join(" ").toLowerCase().includes(q))
+      .sort((a, b) => (b.published || "").localeCompare(a.published || ""));
+
+    $("#view").innerHTML = `
+      <div class="admin-head">
+        <div><h1>Admin — manage notices</h1><div class="muted">Prototype: changes are saved in this browser only and show on the site right away. Nothing is sent to the server.</div></div>
+        <div class="admin-actions">
+          <button class="btn primary" data-admin="new">+ New notice</button>
+          <button class="btn danger" data-admin="reset" ${hasDraft() ? "" : "disabled"}>↺ Reset to sample data</button>
+        </div>
+      </div>
+
+      <div class="status-row">
+        <div class="fact"><span>Total notices</span><b>${state.items.length}</b></div>
+        <div class="fact"><span>Your changes (this browser)</span><b>${c.total ? `${c.new} new · ${c.edited} edited · ${c.deleted} deleted` : "None"}</b></div>
+      </div>
+
+      <div class="admin-tools">
+        <input id="aq" type="search" placeholder="Search notices…" value="${esc(adminF.q)}">
+        <select id="atype"><option value="">All types</option>${TYPES.map((ty) => `<option value="${ty}"${adminF.type === ty ? " selected" : ""}>${T.en.tabs[ty]}</option>`).join("")}</select>
+      </div>
+
+      <table class="admin-table">
+        <thead><tr><th>Notice</th><th class="hide-sm">Type</th><th class="hide-sm">Last / exam date</th><th class="hide-sm">Status</th><th></th></tr></thead>
+        <tbody>
+          ${rows.map((i) => {
+            const ch = changeOf(i);
+            return `<tr>
+              <td class="t">${esc(i.title.en)}<small>${esc(i.org.en)} · ${esc(i.district)}</small></td>
+              <td class="hide-sm"><span class="pill">${esc(T.en.tabs[i.type] || i.type)}</span></td>
+              <td class="hide-sm">${esc(i.lastDate || i.examDate || "—")}</td>
+              <td class="hide-sm">${ch ? `<span class="pill changed">${ch}</span>` : `<span class="pill">sample</span>`}</td>
+              <td><div class="acts">
+                <a class="btn sm" href="#/notice/${encodeURIComponent(i.id)}" title="View">👁</a>
+                <button class="btn sm" data-edit="${esc(i.id)}">Edit</button>
+                <button class="btn sm" data-copy="${esc(i.id)}" title="Duplicate">⧉</button>
+                <button class="btn sm danger" data-del="${esc(i.id)}" title="Delete">🗑</button>
+              </div></td>
+            </tr>`;
+          }).join("") || `<tr><td colspan="5" class="muted">No notices match.</td></tr>`}
+        </tbody>
+      </table>
+      ${editing ? editorHTML(editing) : ""}`;
+
+    if (editing) bindEditor();
+  }
+
+  function editorHTML(it) {
+    const isNewItem = !state.items.some((i) => i.id === it.id) || it.__new;
+    const v = (x) => esc(x ?? "");
+    const lines = (arr, k) => esc((arr || []).map((s) => s[k] || "").join("\n"));
+    const sel = (name, opts, cur) => `<select name="${name}">${opts.map(([val, lab]) => `<option value="${esc(val)}"${val === cur ? " selected" : ""}>${esc(lab)}</option>`).join("")}</select>`;
+    const knownDistricts = [...new Set(state.items.map((i) => i.district))].sort();
+    const qualSet = new Set(it.qualification || []);
+    const extraQ = (it.qualification || []).filter((q) => !QUALS.includes(q)).join(", ");
+    return `<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Edit notice">
+      <form class="panel" id="editForm" novalidate>
+        <div class="modal-head"><h2>${isNewItem ? "New notice" : "Edit notice"}</h2><button type="button" class="icon-btn" data-admin="close" aria-label="Close">✕</button></div>
+        <div class="form-grid">
+          <label>Type${sel("type", TYPES.map((ty) => [ty, T.en.tabs[ty]]), it.type)}</label>
+          <label>Category${sel("category", Object.keys(T.en.cats).map((k) => [k, `${CAT_ICON[k]} ${T.en.cats[k]}`]), it.category)}</label>
+          <label class="full">Title (English) *<input name="title_en" value="${v(it.title?.en)}" required placeholder="e.g. District Police Constable Bharti 2026"></label>
+          <label class="full">Title (Marathi)<input name="title_mr" value="${v(it.title?.mr)}" placeholder="उदा. जिल्हा पोलीस शिपाई भरती 2026"></label>
+          <label>Organisation (English) *<input name="org_en" value="${v(it.org?.en)}" required></label>
+          <label>Organisation (Marathi)<input name="org_mr" value="${v(it.org?.mr)}"></label>
+          <label>District *<input name="district" value="${v(it.district)}" list="districtList" required placeholder="Pune / All Maharashtra"><datalist id="districtList">${knownDistricts.map((d) => `<option value="${esc(d)}">`).join("")}</datalist></label>
+          <label>Number of posts<input name="posts" type="number" min="0" value="${v(it.posts)}" placeholder="0 = not specified"></label>
+          <div class="full"><label>Qualification</label><div class="checks">
+            ${QUALS.map((q) => `<label><input type="checkbox" name="qual" value="${esc(q)}"${qualSet.has(q) ? " checked" : ""}>${esc(q)}</label>`).join("")}
+          </div><input name="qual_extra" value="${esc(extraQ)}" placeholder="Other qualifications, comma separated" style="margin-top:8px;width:100%"></div>
+
+          <h3>Dates</h3>
+          <label>Published *<input name="published" type="date" value="${v(it.published || isoToday())}" required></label>
+          <label>Application starts<input name="startDate" type="date" value="${v(it.startDate)}"></label>
+          <label>Last date<input name="lastDate" type="date" value="${v(it.lastDate)}"></label>
+          <label>Exam date<input name="examDate" type="date" value="${v(it.examDate)}"></label>
+
+          <h3>Details</h3>
+          <label>Pay scale<input name="salary" value="${v(it.salary)}" placeholder="₹21,700 – ₹69,100"></label>
+          <span></span>
+          <label>Age limit (English)<input name="age_en" value="${v(it.age?.en)}"></label>
+          <label>Age limit (Marathi)<input name="age_mr" value="${v(it.age?.mr)}"></label>
+          <label>Fee (English)<input name="fee_en" value="${v(it.fee?.en)}"></label>
+          <label>Fee (Marathi)<input name="fee_mr" value="${v(it.fee?.mr)}"></label>
+          <label>Summary (English)<textarea name="summary_en">${v(it.summary?.en)}</textarea></label>
+          <label>Summary (Marathi)<textarea name="summary_mr">${v(it.summary?.mr)}</textarea></label>
+          <label>How to apply — English <span class="hint">(one step per line)</span><textarea name="steps_en">${lines(it.steps, "en")}</textarea></label>
+          <label>How to apply — Marathi <span class="hint">(same order)</span><textarea name="steps_mr">${lines(it.steps, "mr")}</textarea></label>
+
+          <h3>Links</h3>
+          <label>Official notification URL<input name="link_notice" type="url" value="${v(it.links?.notice)}" placeholder="https://…"></label>
+          <label>Apply online URL<input name="link_apply" type="url" value="${v(it.links?.apply)}" placeholder="https://…"></label>
+          <label class="full">ID (used in the page link)<input name="id" value="${v(isNewItem && !it.id ? "" : it.id)}" placeholder="auto from title" pattern="[a-z0-9-]+"></label>
+        </div>
+        <div class="modal-foot">
+          <button type="button" class="btn" data-admin="close">Cancel</button>
+          <button type="submit" class="btn primary">${isNewItem ? "Add notice" : "Save changes"}</button>
+        </div>
+      </form>
+    </div>`;
+  }
+
+  function slug(s) {
+    return s.toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 50) || "notice";
+  }
+
+  function bindEditor() {
+    const form = $("#editForm");
+    form.querySelector("[name=title_en]").focus();
+    form.onsubmit = (e) => {
+      e.preventDefault();
+      const fd = new FormData(form);
+      const g = (k) => (fd.get(k) || "").toString().trim();
+      form.querySelectorAll(".err").forEach((el) => el.classList.remove("err"));
+      const bad = ["title_en", "org_en", "district", "published"].filter((k) => !g(k));
+      if (g("startDate") && g("lastDate") && g("lastDate") < g("startDate")) bad.push("lastDate");
+      if (g("id") && !/^[a-z0-9-]+$/.test(g("id"))) bad.push("id");
+      if (bad.length) {
+        bad.forEach((k) => form.querySelector(`[name=${k}]`).classList.add("err"));
+        toast(bad.includes("lastDate") ? "Last date is before the start date" : bad.includes("id") ? "ID: use only a-z, 0-9 and -" : "Please fill the required fields (*)");
+        form.querySelector(".err").focus();
+        return;
+      }
+      const pair = (k) => (g(k + "_en") || g(k + "_mr") ? { en: g(k + "_en"), mr: g(k + "_mr") || g(k + "_en") } : undefined);
+      const en = g("steps_en").split("\n").map((s) => s.trim()).filter(Boolean);
+      const mr = g("steps_mr").split("\n").map((s) => s.trim());
+      const quals = [...fd.getAll("qual"), ...g("qual_extra").split(",").map((s) => s.trim()).filter(Boolean)];
+      const oldId = editing.__new ? null : editing.id;
+      let id = g("id") || oldId || `${slug(g("title_en"))}`;
+      if (id !== oldId) { const base = id; let n = 2; while (state.items.some((i) => i.id === id)) id = `${base}-${n++}`; }
+
+      const it = {
+        id, type: g("type"), category: g("category"),
+        title: pair("title"), org: pair("org"),
+        district: g("district"), qualification: quals, posts: +g("posts") || 0, published: g("published"),
+      };
+      ["startDate", "lastDate", "examDate", "salary"].forEach((k) => { if (g(k)) it[k] = g(k); });
+      ["age", "fee", "summary"].forEach((k) => { const p = pair(k); if (p) it[k] = p; });
+      if (en.length) it.steps = en.map((s, i) => ({ en: s, mr: mr[i] || s }));
+      if (g("link_notice") || g("link_apply")) it.links = { ...(g("link_notice") && { notice: g("link_notice") }), ...(g("link_apply") && { apply: g("link_apply") }) };
+
+      const items = state.items.slice();
+      const idx = oldId ? items.findIndex((i) => i.id === oldId) : -1;
+      if (idx >= 0) items[idx] = it; else items.unshift(it);
+      setItems(items);
+      editing = null;
+      toast(idx >= 0 ? "Saved in this browser ✓" : "Added — now visible on the site in this browser ✓");
+      renderAdmin();
+    };
+  }
+
+  function adminClick(el) {
+    const a = el.dataset.admin;
+    if (a === "new") { editing = { __new: true, type: "job", category: "police", published: isoToday() }; renderAdmin(); }
+    else if (a === "close") { editing = null; renderAdmin(); }
+    else if (a === "reset") {
+      if (!confirm("Remove all your changes and go back to the original sample data?")) return;
+      store.del("draft"); state.items = clone(state.published); updateDraftBanner(); toast("Reset to sample data"); renderAdmin();
+    }
   }
 
   // ---------- actions ----------
@@ -378,7 +591,7 @@
   function applyLang() {
     document.documentElement.lang = state.lang === "mr" ? "mr" : "en";
     document.querySelectorAll("[data-i18n]").forEach((el) => { el.textContent = t()[el.dataset.i18n]; });
-    $("#langBtn").textContent = t().langBtn;
+    document.querySelectorAll("[data-lang]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.lang === state.lang));
   }
 
   function applyTheme(theme) {
@@ -393,19 +606,20 @@
       const [, page, arg] = hash.split("/");
       if (page === "notice" && arg) renderDetail(decodeURIComponent(arg));
       else if (page === "saved") renderSaved();
+      else if (page === "admin") renderAdmin();
       else { document.title = `${t().brand} — ${t().tagline}`; renderHome(); }
+      updateDraftBanner();
       if (scroll) window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
     };
-    if (scroll && document.startViewTransition) document.startViewTransition(go); else go();
+    go();
   }
 
   // ---------- events (delegated, set once) ----------
   const onSearch = debounce(() => renderList(), 120);
+  const onAdminSearch = debounce(() => { renderAdmin(); const el = $("#aq"); el.focus(); el.setSelectionRange(el.value.length, el.value.length); }, 200);
   document.addEventListener("input", (e) => {
-    if (e.target.id === "q") {
-      state.f.q = e.target.value;
-      onSearch();
-    }
+    if (e.target.id === "q") { state.f.q = e.target.value; onSearch(); }
+    else if (e.target.id === "aq") { adminF.q = e.target.value; onAdminSearch(); }
   });
   document.addEventListener("change", (e) => {
     const id = e.target.id, f = state.f;
@@ -413,34 +627,51 @@
     else if (id === "fQual") f.qual = e.target.value;
     else if (id === "fSort") f.sort = e.target.value;
     else if (id === "fOpen") f.openOnly = e.target.checked;
+    else if (id === "atype") { adminF.type = e.target.value; renderAdmin(); return; }
     else return;
     renderList();
   });
   document.addEventListener("click", (e) => {
+    if (e.target.id === "modal") { editing = null; renderAdmin(); return; }
     const el = e.target.closest("button, a");
     if (!el) return;
-    const f = state.f;
-    if (el.dataset.save) { e.preventDefault(); toggleSave(el.dataset.save); }
-    else if (el.dataset.type) { f.type = el.dataset.type; f.cat = ""; renderHome(); }
-    else if ("cat" in el.dataset) { f.cat = el.dataset.cat; document.querySelectorAll(".chip").forEach((c) => c.setAttribute("aria-pressed", c === el)); renderList(); }
+    const f = state.f, ds = el.dataset;
+    if (ds.save) { e.preventDefault(); toggleSave(ds.save); }
+    else if (ds.lang) {
+      if (ds.lang === state.lang) return;
+      state.lang = ds.lang; store.set("lang", state.lang); applyLang(); route(false);
+    }
+    else if (ds.view) {
+      state.view = ds.view; store.set("view", state.view);
+      $("#list").className = `grid ${state.view}`;
+      document.querySelectorAll("[data-view]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.view === state.view));
+    }
+    else if (ds.type) { f.type = ds.type; f.cat = ""; renderHome(); }
+    else if ("cat" in ds) { f.cat = ds.cat; document.querySelectorAll(".chip").forEach((c) => c.setAttribute("aria-pressed", c === el)); renderList(); }
     else if (el.id === "clearQ") { f.q = ""; renderHome(); $("#q").focus(); }
     else if (el.id === "resetBtn") { Object.assign(f, { q: "", cat: "", district: "", qual: "", openOnly: true }); renderHome(); }
-    else if ("sample" in el.dataset) { e.preventDefault(); toast(t().sampleLink); }
+    else if ("sample" in ds) { e.preventDefault(); toast(t().sampleLink); }
+    else if (ds.admin) adminClick(el);
+    else if (ds.edit) { editing = clone(state.items.find((i) => i.id === ds.edit)); renderAdmin(); }
+    else if (ds.copy) {
+      const src = clone(state.items.find((i) => i.id === ds.copy));
+      editing = { ...src, __new: true, id: "", published: isoToday(), title: { en: src.title.en + " (copy)", mr: src.title.mr } };
+      renderAdmin();
+    }
+    else if (ds.del) {
+      const it = state.items.find((i) => i.id === ds.del);
+      if (it && confirm(`Delete "${it.title.en}"?`)) { setItems(state.items.filter((i) => i.id !== ds.del)); toast("Deleted — publish to make it live"); renderAdmin(); }
+    }
   });
   document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && editing) { editing = null; renderAdmin(); return; }
     if (e.key === "/" && !/input|select|textarea/i.test(document.activeElement.tagName)) {
       const q = $("#q");
       if (q) { e.preventDefault(); q.focus(); }
     }
   });
-  $("#langBtn").addEventListener("click", () => {
-    state.lang = state.lang === "en" ? "mr" : "en";
-    store.set("lang", state.lang);
-    applyLang();
-    route(false);
-  });
   $("#themeBtn").addEventListener("click", () => applyTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark"));
-  window.addEventListener("hashchange", () => route());
+  window.addEventListener("hashchange", () => { editing = null; route(); });
 
   // ---------- boot ----------
   applyTheme(store.get("theme", matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
@@ -449,6 +680,11 @@
   renderSkeleton();
   fetch(DATA_URL, { cache: "no-cache" })
     .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then((data) => { state.items = data.items || []; route(false); })
+    .then((data) => {
+      state.published = data.items || [];
+      const draft = store.get("draft", null);
+      state.items = draft ? draft.items : clone(state.published);
+      route(false);
+    })
     .catch(() => { $("#view").innerHTML = `<div class="empty" style="margin-top:24px"><div class="big">⚠️</div><p>${esc(t().loadErr)}</p></div>`; });
 })();
