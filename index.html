@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Naukri Katta — Jobs, Results, Admit Cards</title>
+  <meta name="description" content="Latest government and private job notices in Maharashtra — search, filter, save and get reminders.">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230f766e'/><text x='32' y='44' font-size='34' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'>न</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="demo-banner" id="demoBanner" data-i18n="demo">Prototype — all notices below are sample data, not real recruitments.</div>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#/">
+        <span class="brand-mark">न</span>
+        <span class="brand-text"><strong data-i18n="brand">Naukri Katta</strong><small data-i18n="tagline">Jobs · Results · Admit cards</small></span>
+      </a>
+      <nav class="top-actions">
+        <a class="icon-btn" href="#/saved" aria-label="Saved" title="Saved">
+          <svg viewBox="0 0 24 24"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg>
+          <span class="count" id="savedCount" hidden>0</span>
+        </a>
+        <button class="pill-btn" id="langBtn" aria-label="Switch language">मराठी</button>
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode" title="Theme">
+          <svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap" tabindex="-1">
+    <div id="view"></div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p data-i18n="footer">Always verify details in the official notification before applying.</p>
+      <p class="muted">Prototype · static site on GitHub Pages · data from <code>data/jobs.json</code></p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
